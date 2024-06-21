@@ -1,0 +1,70 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "patient-lookup",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Patient/$lookup</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>identifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>The identifier we are looking for.</p>\n</div></td></tr><tr><td>IN</td><td>source</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td/><td><div><p>Original data source. Supported values: https://mpi.tehik.ee and https://rahvastikuregister.ee. By default <em>https://mpi.tehik.ee</em>.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Returns Bundle (with type 'collection') with Patient instances.</p>\n</div></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "https://fhir.ee/OperationDefinition/patient-lookup",
+  "version" : "1.0.0",
+  "name" : "EEMPIPatientLookup",
+  "title" : "Patient Lookup",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2023-03-26T15:21:02+11:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "The lookup operation looking for patient data in the external registers.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "lookup",
+  "resource" : ["Patient"],
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "identifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "The identifier we are looking for.",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "source",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Original data source. Supported values: https://mpi.tehik.ee and https://rahvastikuregister.ee. By default *https://mpi.tehik.ee*.",
+    "type" : "string"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Returns Bundle (with type 'collection') with Patient instances.",
+    "type" : "Bundle"
+  }]
+}

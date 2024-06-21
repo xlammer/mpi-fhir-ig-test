@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Disability"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="Disability"> </a><a name="hcDisability"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;Disability&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-mpi-socialhistory-disability.html">EE MPI SocialHistory Disability</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social history <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Disability type <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#95377-8)</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: <a href="Organization-Org1.html">Organization/Org1</a> &quot;Kodality General Hospital&quot;</p><p><b>value</b>: Keskmine puue <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-disability-level.html">Disability level</a>#keskmine)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="95377-8"/>
+      <display value="Disability type"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2021-11-23"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="Organization/Org1"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/disability-level"/>
+      <code value="keskmine"/>
+      <display value="Keskmine puue"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

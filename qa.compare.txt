@@ -1,0 +1,357 @@
+EEMPI : Validation Results
+=========================================
+
+err = 0, warn = 139, info = 89
+$--
+Generated $--. FHIR version $-- for hl7.fhir.ee.mpi#$-- (canonical = https://fhir.ee)
+ Build Errors : 0 / 4 / 0
+ /workdir/fsh-generated/resources/CodeSystem-disability-level : 0 / 0 / 2
+ /workdir/fsh-generated/resources/CodeSystem-education-level : 0 / 0 / 2
+ /workdir/fsh-generated/resources/CodeSystem-incapacity-for-work-category : 0 / 0 / 2
+ /workdir/fsh-generated/resources/CodeSystem-legal-status : 0 / 0 / 2
+ /workdir/fsh-generated/resources/CodeSystem-national-identifier-requirement : 0 / 0 / 2
+ /workdir/fsh-generated/resources/CodeSystem-occupation-type : 0 / 19 / 4
+ /workdir/fsh-generated/resources/CodeSystem-power-of-attorney : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ConceptMap-identity-system-to-oid : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ConceptMap-person-relationship-mpi-v3 : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ConceptMap-person-relationship-v3-mpi : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ImplementationGuide-hl7.fhir.ee.mpi : 0 / 0 / 2
+ /workdir/fsh-generated/resources/Observation-Disability : 0 / 0 / 1
+ /workdir/fsh-generated/resources/Observation-EducationLevel : 0 / 2 / 1
+ /workdir/fsh-generated/resources/Observation-IncapacityForWork : 0 / 0 / 1
+ /workdir/fsh-generated/resources/Observation-LegalGuardianStatus : 0 / 0 / 3
+ /workdir/fsh-generated/resources/Observation-LegalStatus : 0 / 0 / 1
+ /workdir/fsh-generated/resources/Observation-MaritalStatus : 0 / 1 / 1
+ /workdir/fsh-generated/resources/Observation-Occupation : 0 / 1 / 2
+ /workdir/fsh-generated/resources/Observation-PowerOfAttorney : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-disability : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-education : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-foreign : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-generate-mrn : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-incapacity-for-work : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-legal-guardian : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-link : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-lookup : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-occupation : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-power-of-attorney : 0 / 0 / 2
+ /workdir/fsh-generated/resources/OperationDefinition-patient-unlink : 0 / 0 / 2
+ /workdir/fsh-generated/resources/Organization-Org1 : 0 / 0 / 1
+ /workdir/fsh-generated/resources/Patient-pat-newborn : 0 / 0 / 1
+ /workdir/fsh-generated/resources/Patient-pat-stillborn : 0 / 0 / 1
+ /workdir/fsh-generated/resources/Patient-pat-unk : 0 / 0 / 4
+ /workdir/fsh-generated/resources/Patient-pat1 : 0 / 0 / 3
+ /workdir/fsh-generated/resources/Patient-pat2 : 0 / 0 / 2
+ /workdir/fsh-generated/resources/RelatedPerson-relpat11 : 0 / 0 / 1
+ /workdir/fsh-generated/resources/RelatedPerson-relpat12 : 0 / 0 / 1
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-patient : 0 / 2 / 2
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-patient-newborn : 0 / 6 / 3
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-patient-stillborn : 0 / 6 / 3
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-patient-unknown : 0 / 4 / 2
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-patient-verified : 0 / 2 / 2
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-related-person : 0 / 2 / 2
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-disability : 0 / 9 / 6
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-education-level : 0 / 18 / 6
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-incapacity-for-work : 0 / 9 / 6
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-legal-guardian-status : 0 / 9 / 6
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-legal-status : 0 / 9 / 6
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-marital-status : 0 / 9 / 6
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-occupation : 0 / 18 / 8
+ /workdir/fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-power-of-attorney : 0 / 9 / 6
+ /workdir/fsh-generated/resources/ValueSet-disability-level : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-education-level : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-guardian-status : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-incapacity-for-work-category : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-legal-status : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-occupation-type : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-person-relationship-class : 0 / 0 / 2
+ /workdir/fsh-generated/resources/ValueSet-power-of-attorney : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/occupation-type.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-disability-level.json ==
+INFORMATION: CodeSystem/disability-level: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-education-level.json ==
+INFORMATION: CodeSystem/education-level: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-incapacity-for-work-category.json ==
+INFORMATION: CodeSystem/incapacity-for-work-category: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-legal-status.json ==
+INFORMATION: CodeSystem/legal-status: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-national-identifier-requirement.json ==
+INFORMATION: CodeSystem/national-identifier-requirement: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/CodeSystem-occupation-type.json ==
+INFORMATION: CodeSystem/occupation-type: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[0].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[1].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[2].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[3].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[4].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[5].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[6].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[7].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[8].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[9].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[10].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[11].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[12].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[13].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[14].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[15].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[16].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem.concept[17].designation[0].use: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: CodeSystem/occupation-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.description is mandatory, but it is not present
+INFORMATION: CodeSystem/occupation-type: CodeSystem.property[0]: This property has only a code ('definition') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/occupation-type: CodeSystem.property[1]: This property has only a code ('display') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+== fsh-generated/resources/CodeSystem-power-of-attorney.json ==
+INFORMATION: CodeSystem/power-of-attorney: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ConceptMap-identity-system-to-oid.json ==
+INFORMATION: ConceptMap/identity-system-to-oid: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ConceptMap-person-relationship-mpi-v3.json ==
+INFORMATION: ConceptMap/person-relationship-mpi-v3: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ConceptMap-person-relationship-v3-mpi.json ==
+INFORMATION: ConceptMap/person-relationship-v3-mpi: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.ee.mpi.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.ee.mpi: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Observation-Disability.json ==
+== fsh-generated/resources/Observation-EducationLevel.json ==
+WARNING: Observation/EducationLevel: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/EducationLevel: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-IncapacityForWork.json ==
+== fsh-generated/resources/Observation-LegalGuardianStatus.json ==
+== fsh-generated/resources/Observation-LegalStatus.json ==
+== fsh-generated/resources/Observation-MaritalStatus.json ==
+WARNING: Observation/MaritalStatus: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Occupation.json ==
+WARNING: Observation/Occupation: Observation.component[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.ee/CodeSystem/occupation' could not be found, so the code cannot be validated
+INFORMATION: Observation/Occupation: Observation.component[1].value.ofType(CodeableConcept): Reference to draft CodeSystem https://fhir.ee/CodeSystem/occupation-type|1.0.0
+== fsh-generated/resources/Observation-PowerOfAttorney.json ==
+== fsh-generated/resources/OperationDefinition-patient-disability.json ==
+INFORMATION: OperationDefinition/patient-disability: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-education.json ==
+INFORMATION: OperationDefinition/patient-education: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-foreign.json ==
+INFORMATION: OperationDefinition/patient-foreign: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-generate-mrn.json ==
+INFORMATION: OperationDefinition/patient-generate-mrn: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-incapacity-for-work.json ==
+INFORMATION: OperationDefinition/patient-incapacity-for-work: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-legal-guardian.json ==
+INFORMATION: OperationDefinition/patient-legal-guardian: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-link.json ==
+INFORMATION: OperationDefinition/patient-link: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-lookup.json ==
+INFORMATION: OperationDefinition/patient-lookup: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-occupation.json ==
+INFORMATION: OperationDefinition/patient-occupation: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-power-of-attorney.json ==
+INFORMATION: OperationDefinition/patient-power-of-attorney: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/OperationDefinition-patient-unlink.json ==
+INFORMATION: OperationDefinition/patient-unlink: OperationDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/Organization-Org1.json ==
+== fsh-generated/resources/Patient-pat-newborn.json ==
+== fsh-generated/resources/Patient-pat-stillborn.json ==
+== fsh-generated/resources/Patient-pat-unk.json ==
+INFORMATION: Patient/pat-unk: Patient.birthDate.extension[0].value.ofType(Coding): Reference to experimental CodeSystem https://fhir.ee/CodeSystem/date-accuracy-indicator|1.0.0
+INFORMATION: Patient/pat-unk: Patient.address[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem https://fhir.ee/CodeSystem/ads-adr-id|1.0.0
+INFORMATION: Patient/pat-unk: Patient.address[0].extension[1].value.ofType(Coding): Reference to experimental CodeSystem https://fhir.ee/CodeSystem/ads-oid|1.0.0
+== fsh-generated/resources/Patient-pat1.json ==
+INFORMATION: Patient/pat1: Patient.address[0].extension[0].value.ofType(Coding): Reference to experimental CodeSystem https://fhir.ee/CodeSystem/ads-adr-id|1.0.0
+INFORMATION: Patient/pat1: Patient.address[0].extension[1].value.ofType(Coding): Reference to experimental CodeSystem https://fhir.ee/CodeSystem/ads-oid|1.0.0
+== fsh-generated/resources/Patient-pat2.json ==
+INFORMATION: Patient/pat2: Patient.name[0]: This element does not match any known slice defined in the profile https://fhir.ee/StructureDefinition/ee-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/RelatedPerson-relpat11.json ==
+== fsh-generated/resources/RelatedPerson-relpat12.json ==
+== fsh-generated/resources/StructureDefinition-ee-mpi-patient.json ==
+INFORMATION: StructureDefinition/ee-mpi-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-patient: StructureDefinition.snapshot.element[32]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient: StructureDefinition.snapshot.element[42]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-ee-mpi-patient-newborn.json ==
+INFORMATION: StructureDefinition.snapshot.element[19]: The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
+INFORMATION: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.snapshot.element[18]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.snapshot.element[23]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.snapshot.element[33]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.snapshot.element[43]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.differential.element[2]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-newborn: StructureDefinition.differential.element[5]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-ee-mpi-patient-stillborn.json ==
+INFORMATION: StructureDefinition.snapshot.element[19]: The slice definition for Patient.name has a maximum of 1 but the slices add up to a maximum of 3. Check that this is what is intended
+INFORMATION: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.snapshot.element[18]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.snapshot.element[23]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.snapshot.element[33]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.snapshot.element[43]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.differential.element[2]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-stillborn: StructureDefinition.differential.element[5]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-ee-mpi-patient-unknown.json ==
+INFORMATION: StructureDefinition/ee-mpi-patient-unknown: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-patient-unknown: StructureDefinition.snapshot.element[18]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-unknown: StructureDefinition.snapshot.element[23]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-unknown: StructureDefinition.snapshot.element[33]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-unknown: StructureDefinition.differential.element[2]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-ee-mpi-patient-verified.json ==
+INFORMATION: StructureDefinition/ee-mpi-patient-verified: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-patient-verified: StructureDefinition.snapshot.element[23]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-patient-verified: StructureDefinition.snapshot.element[33]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-ee-mpi-related-person.json ==
+INFORMATION: StructureDefinition/ee-mpi-related-person: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-related-person: StructureDefinition.snapshot.element[27]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-related-person: StructureDefinition.snapshot.element[39]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-disability.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[34]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.differential.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ee-mpi-socialhistory-disability: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-education-level.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[41]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[43]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[44]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[49]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[51]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[52]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[9]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[10]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[11]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[13]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[14]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.differential.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-education-level: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[34]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.differential.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ee-mpi-socialhistory-incapacity-for-work: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[34]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.differential.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-guardian-status: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-legal-status.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[34]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.differential.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ee-mpi-socialhistory-legal-status: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-marital-status.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[34]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.differential.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ee-mpi-socialhistory-marital-status: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-occupation.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[41]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[43]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[44]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[49]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[51]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[52]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[83].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[9]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[10]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[11]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[13]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[14]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[15]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.differential.element[28].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-occupation: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/StructureDefinition-ee-mpi-socialhistory-power-of-attorney.json ==
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[20]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[24].slicing.discriminator[0].type: The code 'pattern' is valid but is deprecated
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[25]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[28]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[34]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.differential.element[3]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.differential.element[6].fixed.ofType(Coding): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|1.0.0
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.differential.element[6]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.differential.element[7]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+INFORMATION: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[25].fixed.ofType(Coding): For the complex type Coding, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+WARNING: StructureDefinition/ee-mpi-socialhistory-power-of-attorney: StructureDefinition.snapshot.element[34].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+== fsh-generated/resources/ValueSet-disability-level.json ==
+INFORMATION: ValueSet/disability-level: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-education-level.json ==
+INFORMATION: ValueSet/education-level: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-guardian-status.json ==
+INFORMATION: ValueSet/guardian-status: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-incapacity-for-work-category.json ==
+INFORMATION: ValueSet/incapacity-for-work-category: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-legal-status.json ==
+INFORMATION: ValueSet/legal-status: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-occupation-type.json ==
+INFORMATION: ValueSet/occupation-type: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-person-relationship-class.json ==
+INFORMATION: ValueSet/person-relationship-class: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated/resources/ValueSet-power-of-attorney.json ==
+INFORMATION: ValueSet/power-of-attorney: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

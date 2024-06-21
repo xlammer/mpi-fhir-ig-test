@@ -1,0 +1,8 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+https://fhir.ee/CodeSystem/disability-level,1.0.0,draft,,EEMPIDisabilityLevel,Disability level,"Puude raskusaste",
+https://fhir.ee/CodeSystem/education-level,1.0.0,draft,,EEMPIEducationLevel,Education level,"Omandatud kõrgeim haridustase",
+https://fhir.ee/CodeSystem/incapacity-for-work-category,1.0.0,draft,,EEMPIIncapacityForWorkCategory,Category of Incapacity For Work,"Töövõimetuse määr",
+https://fhir.ee/CodeSystem/legal-status,1.0.0,draft,,EEMPILegalStatus,Legal Status,"The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status.",
+https://fhir.ee/CodeSystem/national-identifier-requirement,1.0.0,draft,,EEMPINationalIdentifierRequirement,National identifier requirement,"Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood",
+https://fhir.ee/CodeSystem/occupation-type,1.0.0,draft,,EEMPIOccupationType,Type of employment,"",
+https://fhir.ee/CodeSystem/power-of-attorney,1.0.0,draft,,EEMPIPowerOfAttorney,PowerOfAttorney Status,"Hooldusõiguse liik",

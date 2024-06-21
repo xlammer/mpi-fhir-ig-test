@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="national-identifier-requirement"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/national-identifier-requirement</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">EST<a name="national-identifier-requirement-EST"> </a></td><td>Eesti</td></tr><tr><td style="white-space:nowrap">BGR<a name="national-identifier-requirement-BGR"> </a></td><td>Bulgaaria</td></tr><tr><td style="white-space:nowrap">CZE<a name="national-identifier-requirement-CZE"> </a></td><td>Tšehhi</td></tr><tr><td style="white-space:nowrap">LVA<a name="national-identifier-requirement-LVA"> </a></td><td>Läti</td></tr><tr><td style="white-space:nowrap">MLT<a name="national-identifier-requirement-MLT"> </a></td><td>Malta</td></tr><tr><td style="white-space:nowrap">ROU<a name="national-identifier-requirement-ROU"> </a></td><td>Rumeenia</td></tr><tr><td style="white-space:nowrap">ALB<a name="national-identifier-requirement-ALB"> </a></td><td>Albaania</td></tr><tr><td style="white-space:nowrap">BIH<a name="national-identifier-requirement-BIH"> </a></td><td>Bosnia ja Hertsogoviina</td></tr><tr><td style="white-space:nowrap">MNE<a name="national-identifier-requirement-MNE"> </a></td><td>Montenegro</td></tr><tr><td style="white-space:nowrap">MKD<a name="national-identifier-requirement-MKD"> </a></td><td>Põhja-Makedoonia</td></tr><tr><td style="white-space:nowrap">SRB<a name="national-identifier-requirement-SRB"> </a></td><td>Serbia</td></tr><tr><td style="white-space:nowrap">TUR<a name="national-identifier-requirement-TUR"> </a></td><td>Türgi</td></tr><tr><td style="white-space:nowrap">GEO<a name="national-identifier-requirement-GEO"> </a></td><td>Gruusia</td></tr><tr><td style="white-space:nowrap">ZAF<a name="national-identifier-requirement-ZAF"> </a></td><td>Lõuna-Aafrika Vabariik</td></tr><tr><td style="white-space:nowrap">ZWE<a name="national-identifier-requirement-ZWE"> </a></td><td>Zimbabwe</td></tr><tr><td style="white-space:nowrap">ARG<a name="national-identifier-requirement-ARG"> </a></td><td>Argentiina</td></tr><tr><td style="white-space:nowrap">BRA<a name="national-identifier-requirement-BRA"> </a></td><td>Brasiilia</td></tr><tr><td style="white-space:nowrap">MEX<a name="national-identifier-requirement-MEX"> </a></td><td>Mehhiko</td></tr><tr><td style="white-space:nowrap">VEN<a name="national-identifier-requirement-VEN"> </a></td><td>Venetsueela</td></tr><tr><td style="white-space:nowrap">BHR<a name="national-identifier-requirement-BHR"> </a></td><td>Bahrein</td></tr><tr><td style="white-space:nowrap">ISR<a name="national-identifier-requirement-ISR"> </a></td><td>Israel</td></tr><tr><td style="white-space:nowrap">KAZ<a name="national-identifier-requirement-KAZ"> </a></td><td>Kasashtan</td></tr><tr><td style="white-space:nowrap">KWT<a name="national-identifier-requirement-KWT"> </a></td><td>Kuveit</td></tr><tr><td style="white-space:nowrap">MYS<a name="national-identifier-requirement-MYS"> </a></td><td>Malaisia</td></tr><tr><td style="white-space:nowrap">NPL<a name="national-identifier-requirement-NPL"> </a></td><td>Nepaal</td></tr><tr><td style="white-space:nowrap">PAK<a name="national-identifier-requirement-PAK"> </a></td><td>Pakistan</td></tr><tr><td style="white-space:nowrap">TWN<a name="national-identifier-requirement-TWN"> </a></td><td>Taiwan</td></tr><tr><td style="white-space:nowrap">THA<a name="national-identifier-requirement-THA"> </a></td><td>Tai</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/national-identifier-requirement"/>
+  <version value="1.0.0"/>
+  <name value="EEMPINationalIdentifierRequirement"/>
+  <title value="National identifier requirement"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="28"/>
+  <concept>
+    <code value="EST"/>
+    <display value="Eesti"/>
+  </concept>
+  <concept>
+    <code value="BGR"/>
+    <display value="Bulgaaria"/>
+  </concept>
+  <concept>
+    <code value="CZE"/>
+    <display value="Tšehhi"/>
+  </concept>
+  <concept>
+    <code value="LVA"/>
+    <display value="Läti"/>
+  </concept>
+  <concept>
+    <code value="MLT"/>
+    <display value="Malta"/>
+  </concept>
+  <concept>
+    <code value="ROU"/>
+    <display value="Rumeenia"/>
+  </concept>
+  <concept>
+    <code value="ALB"/>
+    <display value="Albaania"/>
+  </concept>
+  <concept>
+    <code value="BIH"/>
+    <display value="Bosnia ja Hertsogoviina"/>
+  </concept>
+  <concept>
+    <code value="MNE"/>
+    <display value="Montenegro"/>
+  </concept>
+  <concept>
+    <code value="MKD"/>
+    <display value="Põhja-Makedoonia"/>
+  </concept>
+  <concept>
+    <code value="SRB"/>
+    <display value="Serbia"/>
+  </concept>
+  <concept>
+    <code value="TUR"/>
+    <display value="Türgi"/>
+  </concept>
+  <concept>
+    <code value="GEO"/>
+    <display value="Gruusia"/>
+  </concept>
+  <concept>
+    <code value="ZAF"/>
+    <display value="Lõuna-Aafrika Vabariik"/>
+  </concept>
+  <concept>
+    <code value="ZWE"/>
+    <display value="Zimbabwe"/>
+  </concept>
+  <concept>
+    <code value="ARG"/>
+    <display value="Argentiina"/>
+  </concept>
+  <concept>
+    <code value="BRA"/>
+    <display value="Brasiilia"/>
+  </concept>
+  <concept>
+    <code value="MEX"/>
+    <display value="Mehhiko"/>
+  </concept>
+  <concept>
+    <code value="VEN"/>
+    <display value="Venetsueela"/>
+  </concept>
+  <concept>
+    <code value="BHR"/>
+    <display value="Bahrein"/>
+  </concept>
+  <concept>
+    <code value="ISR"/>
+    <display value="Israel"/>
+  </concept>
+  <concept>
+    <code value="KAZ"/>
+    <display value="Kasashtan"/>
+  </concept>
+  <concept>
+    <code value="KWT"/>
+    <display value="Kuveit"/>
+  </concept>
+  <concept>
+    <code value="MYS"/>
+    <display value="Malaisia"/>
+  </concept>
+  <concept>
+    <code value="NPL"/>
+    <display value="Nepaal"/>
+  </concept>
+  <concept>
+    <code value="PAK"/>
+    <display value="Pakistan"/>
+  </concept>
+  <concept>
+    <code value="TWN"/>
+    <display value="Taiwan"/>
+  </concept>
+  <concept>
+    <code value="THA"/>
+    <display value="Tai"/>
+  </concept>
+</CodeSystem>

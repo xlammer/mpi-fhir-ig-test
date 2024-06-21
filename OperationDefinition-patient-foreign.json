@@ -1,0 +1,102 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "patient-foreign",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Patient/$foreign</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>identifier-country</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td/><td><div><p>Identifikaatori väljaandja riigi 3 kohaline kood ISO standardi järgi. Kohustuslik.</p>\n</div></td></tr><tr><td>IN</td><td>birthdate</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#date\">date</a></td><td/><td><div><p>Patient birthdate in form yyyy-mm-dd.</p>\n</div></td></tr><tr><td>IN</td><td>gender</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td/><td><div><p>Patient gender. Kohustuslik.</p>\n</div></td></tr><tr><td>IN</td><td>given</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td/><td><div><p>Patient given name. Eesnimi. Otsing sõna alguse järgi, ei ole tõstetundlik.</p>\n</div></td></tr><tr><td>IN</td><td>family</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td/><td><div><p>Patient family name. Perekonna nimi. Otsing sõna alguse järgi, ei ole tõstetundlik.</p>\n</div></td></tr><tr><td>IN</td><td>telecom</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#ContactPoint\">ContactPoint</a></td><td/><td><div><p>Telekom'i väärtus, e-mail või tel. number.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Returns Bundle (with type collection) with Patient instances.</p>\n</div></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "https://fhir.ee/OperationDefinition/patient-foreign",
+  "version" : "1.0.0",
+  "name" : "EEMPIPatientForeignSearch",
+  "title" : "Patient Foreign",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2023-03-26T15:21:02+11:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "The foreign operation perform complex search over patient resource.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "foreign",
+  "resource" : ["Patient"],
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "identifier-country",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifikaatori väljaandja riigi 3 kohaline kood ISO standardi järgi. Kohustuslik.",
+    "type" : "string"
+  },
+  {
+    "name" : "birthdate",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Patient birthdate in form yyyy-mm-dd.",
+    "type" : "date"
+  },
+  {
+    "name" : "gender",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Patient gender. Kohustuslik.",
+    "type" : "string"
+  },
+  {
+    "name" : "given",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Patient given name. Eesnimi. Otsing sõna alguse järgi, ei ole tõstetundlik.",
+    "type" : "string"
+  },
+  {
+    "name" : "family",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Patient family name. Perekonna nimi. Otsing sõna alguse järgi, ei ole tõstetundlik.",
+    "type" : "string"
+  },
+  {
+    "name" : "telecom",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Telekom'i väärtus, e-mail või tel. number.",
+    "type" : "ContactPoint"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Returns Bundle (with type collection) with Patient instances.",
+    "type" : "Bundle"
+  }]
+}

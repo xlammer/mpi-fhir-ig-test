@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="power-of-attorney"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-power-of-attorney.html"><code>https://fhir.ee/CodeSystem/power-of-attorney</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.ee/ValueSet/power-of-attorney"/>
+  <version value="1.0.0"/>
+  <name value="EEMPIPowerOfAttorney"/>
+  <title value="PowerOfAttorney Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="Hooldusõiguse liik"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://fhir.ee/CodeSystem/power-of-attorney"/>
+    </include>
+  </compose>
+</ValueSet>

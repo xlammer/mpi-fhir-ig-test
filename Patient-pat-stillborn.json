@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Patient",
+  "id" : "pat-stillborn",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> female, DoB: 2007-12-12 ( <code>https://fhir.ee/sid/pid/est/npi</code>/60712121111)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>false</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>2007-12-12 16:00:00+0000</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">1</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>https://fhir.ee/sid/pid/est/prn/90006399</code>/123e4567-e89b-12d3-a456-426614174000</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.ee/sid/pid/est/npi",
+    "value" : "60712121111"
+  },
+  {
+    "system" : "https://fhir.ee/sid/pid/est/prn/90006399",
+    "value" : "123e4567-e89b-12d3-a456-426614174000"
+  }],
+  "active" : false,
+  "gender" : "female",
+  "birthDate" : "2007-12-12",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+      "valueDateTime" : "2007-12-12T16:00:00.000Z"
+    }]
+  },
+  "deceasedDateTime" : "2007-12-12T16:00:00.000Z",
+  "multipleBirthInteger" : 1
+}

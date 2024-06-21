@@ -1,0 +1,60 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/CodeSystem/disability-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIDisabilityLevel",
+      "title" : "Disability level",
+      "description" : "Puude raskusaste"
+    },
+    {
+      "url" : "https://fhir.ee/CodeSystem/education-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIEducationLevel",
+      "title" : "Education level",
+      "description" : "Omandatud kõrgeim haridustase"
+    },
+    {
+      "url" : "https://fhir.ee/CodeSystem/incapacity-for-work-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIIncapacityForWorkCategory",
+      "title" : "Category of Incapacity For Work",
+      "description" : "Töövõimetuse määr"
+    },
+    {
+      "url" : "https://fhir.ee/CodeSystem/legal-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPILegalStatus",
+      "title" : "Legal Status",
+      "description" : "The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status."
+    },
+    {
+      "url" : "https://fhir.ee/CodeSystem/national-identifier-requirement",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPINationalIdentifierRequirement",
+      "title" : "National identifier requirement",
+      "description" : "Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood"
+    },
+    {
+      "url" : "https://fhir.ee/CodeSystem/occupation-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIOccupationType",
+      "title" : "Type of employment",
+      "description" : null
+    },
+    {
+      "url" : "https://fhir.ee/CodeSystem/power-of-attorney",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPowerOfAttorney",
+      "title" : "PowerOfAttorney Status",
+      "description" : "Hooldusõiguse liik"
+    }
+  ]
+}

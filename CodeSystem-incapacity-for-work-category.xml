@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="incapacity-for-work-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/incapacity-for-work-category</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style="white-space:nowrap">puudub<a name="incapacity-for-work-category-puudub"> </a></td><td>Puuduv töövõime</td><td>Puuduv töövõime</td></tr><tr><td style="white-space:nowrap">osaline<a name="incapacity-for-work-category-osaline"> </a></td><td>Osaline töövõime</td><td>Osaline töövõime</td></tr><tr><td style="white-space:nowrap">taielik<a name="incapacity-for-work-category-taielik"> </a></td><td>Töövõime ei ole vähenenud</td><td>Töövõime ei ole vähenenud</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/incapacity-for-work-category"/>
+  <version value="1.0.0"/>
+  <name value="EEMPIIncapacityForWorkCategory"/>
+  <title value="Category of Incapacity For Work"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="Töövõimetuse määr"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="puudub"/>
+    <display value="Puuduv töövõime"/>
+    <designation>
+      <language value="et"/>
+      <value value="Puuduv töövõime"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="osaline"/>
+    <display value="Osaline töövõime"/>
+    <designation>
+      <language value="et"/>
+      <value value="Osaline töövõime"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="taielik"/>
+    <display value="Töövõime ei ole vähenenud"/>
+    <designation>
+      <language value="et"/>
+      <value value="Töövõime ei ole vähenenud"/>
+    </designation>
+  </concept>
+</CodeSystem>

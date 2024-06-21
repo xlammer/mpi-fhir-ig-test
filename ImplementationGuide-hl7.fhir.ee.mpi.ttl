@@ -1,0 +1,1153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hl7.fhir.ee.mpi"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EEMPI</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEMPI"] ; # 
+  fhir:title [ fhir:v "Patsientide üldandmete teenus / Master Patient Index"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-06-20T13:23:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "hl7.fhir.ee.mpi"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "5.5.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_extensions" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_ee_base" ] ;
+     fhir:uri [
+       fhir:v "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.ee.base" ] ;
+     fhir:version [ fhir:v "current" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/incapacity-for-work-category> ;
+         fhir:reference [ fhir:v "ValueSet/incapacity-for-work-category" ]
+       ] ;
+       fhir:name [ fhir:v "Category of Incapacity For Work" ] ;
+       fhir:description [ fhir:v "Töövõimetuse määr" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/incapacity-for-work-category> ;
+         fhir:reference [ fhir:v "CodeSystem/incapacity-for-work-category" ]
+       ] ;
+       fhir:name [ fhir:v "Category of Incapacity For Work" ] ;
+       fhir:description [ fhir:v "Töövõimetuse määr" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/Disability> ;
+         fhir:reference [ fhir:v "Observation/Disability" ]
+       ] ;
+       fhir:name [ fhir:v "Disability" ] ;
+       fhir:description [ fhir:v "Example of patient disability" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/disability-level> ;
+         fhir:reference [ fhir:v "ValueSet/disability-level" ]
+       ] ;
+       fhir:name [ fhir:v "Disability level" ] ;
+       fhir:description [ fhir:v "Puude raskusaste" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/disability-level> ;
+         fhir:reference [ fhir:v "CodeSystem/disability-level" ]
+       ] ;
+       fhir:name [ fhir:v "Disability level" ] ;
+       fhir:description [ fhir:v "Puude raskusaste" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/education-level> ;
+         fhir:reference [ fhir:v "ValueSet/education-level" ]
+       ] ;
+       fhir:name [ fhir:v "Education Level" ] ;
+       fhir:description [ fhir:v "Patsiendi kõrgeim haridustase" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/education-level> ;
+         fhir:reference [ fhir:v "CodeSystem/education-level" ]
+       ] ;
+       fhir:name [ fhir:v "Education level" ] ;
+       fhir:description [ fhir:v "Omandatud kõrgeim haridustase" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/EducationLevel> ;
+         fhir:reference [ fhir:v "Observation/EducationLevel" ]
+       ] ;
+       fhir:name [ fhir:v "EducationLevel" ] ;
+       fhir:description [ fhir:v "Example of patient education" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource:abstract" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-patient" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI Patient" ] ;
+       fhir:description [ fhir:v "Common MPI limitations on Patient resouce" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-patient-newborn" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI Patient Newborn" ] ;
+       fhir:description [ fhir:v "Profiil vastsündinu andmete kirjeldamiseks" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-patient-stillborn" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI Patient Stillborn" ] ;
+       fhir:description [ fhir:v "Profiil surnult sündinu andmete kirjeldamiseks" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-patient-unknown" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI Patient Unknown" ] ;
+       fhir:description [ fhir:v "Kasutamiseks EMO-s, kiirabis, anonüümsete patsientide ning keskkonnaproovide puhul" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-verified> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-patient-verified" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI Patient Verified" ] ;
+       fhir:description [ fhir:v "Retseptsioonis identifitseeritud MPI Patsient." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-related-person> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-related-person" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI Related Person" ] ;
+       fhir:description [ fhir:v "Patsient ja tema kontakt- ja seotud isikud." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-disability" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Disability" ] ;
+       fhir:description [ fhir:v "Puude raskusaste" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-education-level" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Education Level" ] ;
+       fhir:description [ fhir:v "Haridustase" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-incapacity-for-work> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-incapacity-for-work" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Incapacity For Work" ] ;
+       fhir:description [ fhir:v "Töövõimetuse määr" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-legal-guardian-status" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Legal Guardian Status" ] ;
+       fhir:description [ fhir:v "Seadusliku eeskostja staatus" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-legal-status" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Legal Status" ] ;
+       fhir:description [ fhir:v "Patsiendi teovõime staatus." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-marital-status" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Marital Status" ] ;
+       fhir:description [ fhir:v "Abielu või suhte liik." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Occupation" ] ;
+       fhir:description [ fhir:v "Töötamine" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney> ;
+         fhir:reference [ fhir:v "StructureDefinition/ee-mpi-socialhistory-power-of-attorney" ]
+       ] ;
+       fhir:name [ fhir:v "EE MPI SocialHistory Power Of Attorney" ] ;
+       fhir:description [ fhir:v "Hooldusõigus" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Organization/Org1> ;
+         fhir:reference [ fhir:v "Organization/Org1" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleHospital" ] ;
+       fhir:description [ fhir:v "Example of organization Org1" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-generate-mrn> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-generate-mrn" ]
+       ] ;
+       fhir:name [ fhir:v "Generate Medical Record Number" ] ;
+       fhir:description [ fhir:v "Generate the new unique Medical Record Number may be used for unknown/anonymous patient's identification." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/guardian-status> ;
+         fhir:reference [ fhir:v "ValueSet/guardian-status" ]
+       ] ;
+       fhir:name [ fhir:v "Guardian Status" ] ;
+       fhir:description [ fhir:v "Eeskostja liik" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/IncapacityForWork> ;
+         fhir:reference [ fhir:v "Observation/IncapacityForWork" ]
+       ] ;
+       fhir:name [ fhir:v "IncapacityForWork" ] ;
+       fhir:description [ fhir:v "Example of patient incapacity for work" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-incapacity-for-work"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-incapacity-for-work>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/legal-status> ;
+         fhir:reference [ fhir:v "ValueSet/legal-status" ]
+       ] ;
+       fhir:name [ fhir:v "Legal Status" ] ;
+       fhir:description [ fhir:v "Patsiendi teovõime staatus." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/legal-status> ;
+         fhir:reference [ fhir:v "CodeSystem/legal-status" ]
+       ] ;
+       fhir:name [ fhir:v "Legal Status" ] ;
+       fhir:description [ fhir:v "The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/LegalGuardianStatus> ;
+         fhir:reference [ fhir:v "Observation/LegalGuardianStatus" ]
+       ] ;
+       fhir:name [ fhir:v "LegalGuardianStatus" ] ;
+       fhir:description [ fhir:v "Example of patient legal duardian" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/LegalStatus> ;
+         fhir:reference [ fhir:v "Observation/LegalStatus" ]
+       ] ;
+       fhir:name [ fhir:v "LegalStatus" ] ;
+       fhir:description [ fhir:v "Example of patient legal status" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ConceptMap/identity-system-to-oid> ;
+         fhir:reference [ fhir:v "ConceptMap/identity-system-to-oid" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping of Identity System to OID" ] ;
+       fhir:description [ fhir:v "A mapping between the Identity System for person identification and ENHIS OID systems" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ConceptMap/person-relationship-v3-mpi> ;
+         fhir:reference [ fhir:v "ConceptMap/person-relationship-v3-mpi" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping of legacy V3 person relationship to MPI" ] ;
+       fhir:description [ fhir:v "A mapping between the legacy and new person relationships" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ConceptMap/person-relationship-mpi-v3> ;
+         fhir:reference [ fhir:v "ConceptMap/person-relationship-mpi-v3" ]
+       ] ;
+       fhir:name [ fhir:v "Mapping of MPI person relationship to legacy V3" ] ;
+       fhir:description [ fhir:v "A mapping between the new and legacy person relationships" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/MaritalStatus> ;
+         fhir:reference [ fhir:v "Observation/MaritalStatus" ]
+       ] ;
+       fhir:name [ fhir:v "MaritalStatus" ] ;
+       fhir:description [ fhir:v "Example of patient marital status" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/national-identifier-requirement> ;
+         fhir:reference [ fhir:v "CodeSystem/national-identifier-requirement" ]
+       ] ;
+       fhir:name [ fhir:v "National identifier requirement" ] ;
+       fhir:description [ fhir:v "Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/Occupation> ;
+         fhir:reference [ fhir:v "Observation/Occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Occupation" ] ;
+       fhir:description [ fhir:v "Example of patient occupation" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/occupation-type> ;
+         fhir:reference [ fhir:v "ValueSet/occupation-type" ]
+       ] ;
+       fhir:name [ fhir:v "Occupation Type" ] ;
+       fhir:description [ fhir:v "Töötamise liik" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-disability> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-disability" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Disability" ] ;
+       fhir:description [ fhir:v "The patient disability from Social Insurance Board (SKA)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-education> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-education" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Education" ] ;
+       fhir:description [ fhir:v "The highest education level in the Education Register." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-foreign> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-foreign" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Foreign" ] ;
+       fhir:description [ fhir:v "The foreign operation perform complex search over patient resource." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-incapacity-for-work> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-incapacity-for-work" ]
+       ] ;
+       fhir:name [ fhir:v "Patient incapacity for work" ] ;
+       fhir:description [ fhir:v "The observation of patient incapacity for work from Social Insurance Board (SKA)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-legal-guardian> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-legal-guardian" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Legal Guardians" ] ;
+       fhir:description [ fhir:v "The list of legal guardians specified in the Population Register." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-link> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-link" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Link" ] ;
+       fhir:description [ fhir:v "The link operation is used to link two patient resources. One of the two patients is identified as the source and one as the target. The link with type 'replaces' created from source to destination patient, the another link with type 'replaced-byä created from destination to source patient. As result of linking the destination patient is deactivated." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-lookup> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-lookup" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Lookup" ] ;
+       fhir:description [ fhir:v "The lookup operation looking for patient data in the external registers." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-occupation> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Patient occupation" ] ;
+       fhir:description [ fhir:v "The observation of patient occupations from Employment Register (TÖR)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-power-of-attorney> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-power-of-attorney" ]
+       ] ;
+       fhir:name [ fhir:v "Patient power of attorneys" ] ;
+       fhir:description [ fhir:v "The list of power of attorneys in the Population Register." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/OperationDefinition/patient-unlink> ;
+         fhir:reference [ fhir:v "OperationDefinition/patient-unlink" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Unlink" ] ;
+       fhir:description [ fhir:v "The unlink operation is used to unlink two patient resources. One of the two patients is identified as the source and one as the target. The links between the source and destination Patients will be removed. Destination resource will be reactivated." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Patient/pat1> ;
+         fhir:reference [ fhir:v "Patient/pat1" ]
+       ] ;
+       fhir:name [ fhir:v "PatientIgorBossenko" ] ;
+       fhir:description [ fhir:v "Patsient erinevate identifikaatoritega" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-patient-verified"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-verified>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/RelatedPerson/relpat11> ;
+         fhir:reference [ fhir:v "RelatedPerson/relpat11" ]
+       ] ;
+       fhir:name [ fhir:v "PatientIgorBossenkoSon" ] ;
+       fhir:description [ fhir:v "Example of patient son" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-related-person"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-related-person>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/RelatedPerson/relpat12> ;
+         fhir:reference [ fhir:v "RelatedPerson/relpat12" ]
+       ] ;
+       fhir:name [ fhir:v "PatientIgorBossenkoWife" ] ;
+       fhir:description [ fhir:v "Example of patient wife and emergency contact" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-related-person"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-related-person>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Patient/pat2> ;
+         fhir:reference [ fhir:v "Patient/pat2" ]
+       ] ;
+       fhir:name [ fhir:v "PatientJohnDoe" ] ;
+       fhir:description [ fhir:v "Foreigner with minimal dataset." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Patient/pat-newborn> ;
+         fhir:reference [ fhir:v "Patient/pat-newborn" ]
+       ] ;
+       fhir:name [ fhir:v "PatientNewborn" ] ;
+       fhir:description [ fhir:v "Example of newborn patient" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Patient/pat-stillborn> ;
+         fhir:reference [ fhir:v "Patient/pat-stillborn" ]
+       ] ;
+       fhir:name [ fhir:v "PatientStillborn" ] ;
+       fhir:description [ fhir:v "Example of stillborn patient" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Patient/pat-unk> ;
+         fhir:reference [ fhir:v "Patient/pat-unk" ]
+       ] ;
+       fhir:name [ fhir:v "PatientUnknown" ] ;
+       fhir:description [ fhir:v "Example of unknown patient" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/person-relationship-class> ;
+         fhir:reference [ fhir:v "ValueSet/person-relationship-class" ]
+       ] ;
+       fhir:name [ fhir:v "Person Relationship Class" ] ;
+       fhir:description [ fhir:v "Person relationship class" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/Observation/PowerOfAttorney> ;
+         fhir:reference [ fhir:v "Observation/PowerOfAttorney" ]
+       ] ;
+       fhir:name [ fhir:v "PowerOfAttorney" ] ;
+       fhir:description [ fhir:v "Example of patient attorney" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney"^^xsd:anyURI ;
+         fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/ValueSet/power-of-attorney> ;
+         fhir:reference [ fhir:v "ValueSet/power-of-attorney" ]
+       ] ;
+       fhir:name [ fhir:v "PowerOfAttorney Status" ] ;
+       fhir:description [ fhir:v "Hooldusõiguse liik" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/power-of-attorney> ;
+         fhir:reference [ fhir:v "CodeSystem/power-of-attorney" ]
+       ] ;
+       fhir:name [ fhir:v "PowerOfAttorney Status" ] ;
+       fhir:description [ fhir:v "Hooldusõiguse liik" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.ee/CodeSystem/occupation-type> ;
+         fhir:reference [ fhir:v "CodeSystem/occupation-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type of employment" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Sissejuhatus" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "patient.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "patient.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patsiendid" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "identifiers.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "identifiers.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Identifikaatorid" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "dev.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "dev.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Juhend arendajale" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "link.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "link.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patsientide sidumine ja lahti sidumine" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "errors.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "errors.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Vead" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "operations.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "operations.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Toetavad operatsioonid" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "checklist.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "checklist.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Checklist" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "contact.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "contact.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Contact Us" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "download.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "download.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Download" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "uc.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "uc.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Kasutusjuhud" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "checks.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "checks.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Kontrollid" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "hl7v3.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "hl7v3.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Seos HL7 V3-ga ja CDA-ga" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2023+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ballot" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://fhir.ee/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

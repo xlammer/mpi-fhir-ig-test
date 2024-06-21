@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/RelatedPerson/relpat11> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "relpat11"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-related-person"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-related-person>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson </b><a name=\"relpat11\"> </a><a name=\"hcrelpat11\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;relpat11&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-mpi-related-person.html\">EE MPI Related Person</a></p></div><p><b>identifier</b>: <a href=\"https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html\" title=\"The personal national identification code of Estonian citizens and residents.\">Estonian Personal National Identification Code</a>/39510212711</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>relationship</b>: Child <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#67822003)</span></p><p><b>name</b>: Son of Igor</p><p><b>period</b>: 1995-10-21 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/ni"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "39510212711" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:link <https://fhir.ee/Patient/pat1> ;
+     fhir:reference [ fhir:v "Patient/pat1" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       a sct:67822003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67822003" ] ;
+       fhir:display [ fhir:v "Child" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Son of Igor" ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "1995-10-21"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

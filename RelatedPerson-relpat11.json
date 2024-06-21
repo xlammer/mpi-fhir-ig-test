@@ -1,0 +1,32 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "relpat11",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson </b><a name=\"relpat11\"> </a><a name=\"hcrelpat11\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">ResourceRelatedPerson &quot;relpat11&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ee-mpi-related-person.html\">EE MPI Related Person</a></p></div><p><b>identifier</b>: <a href=\"https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html\" title=\"The personal national identification code of Estonian citizens and residents.\">Estonian Personal National Identification Code</a>/39510212711</p><p><b>active</b>: true</p><p><b>patient</b>: <a href=\"Patient-pat1.html\">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>relationship</b>: Child <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#67822003)</span></p><p><b>name</b>: Son of Igor</p><p><b>period</b>: 1995-10-21 --&gt; (ongoing)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.ee/sid/pid/est/ni",
+    "value" : "39510212711"
+  }],
+  "active" : true,
+  "patient" : {
+    "reference" : "Patient/pat1"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "67822003",
+      "display" : "Child"
+    }]
+  }],
+  "name" : [{
+    "text" : "Son of Igor"
+  }],
+  "period" : {
+    "start" : "1995-10-21"
+  }
+}

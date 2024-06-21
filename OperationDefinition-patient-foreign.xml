@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="patient-foreign"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>URL: [base]/Patient/$foreign</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>identifier-country</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td/><td><div><p>Identifikaatori väljaandja riigi 3 kohaline kood ISO standardi järgi. Kohustuslik.</p>
+</div></td></tr><tr><td>IN</td><td>birthdate</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#date">date</a></td><td/><td><div><p>Patient birthdate in form yyyy-mm-dd.</p>
+</div></td></tr><tr><td>IN</td><td>gender</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td/><td><div><p>Patient gender. Kohustuslik.</p>
+</div></td></tr><tr><td>IN</td><td>given</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td/><td><div><p>Patient given name. Eesnimi. Otsing sõna alguse järgi, ei ole tõstetundlik.</p>
+</div></td></tr><tr><td>IN</td><td>family</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td/><td><div><p>Patient family name. Perekonna nimi. Otsing sõna alguse järgi, ei ole tõstetundlik.</p>
+</div></td></tr><tr><td>IN</td><td>telecom</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint">ContactPoint</a></td><td/><td><div><p>Telekom'i väärtus, e-mail või tel. number.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R5/bundle.html">Bundle</a></td><td/><td><div><p>Returns Bundle (with type collection) with Patient instances.</p>
+</div></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use"/>
+  </extension>
+  <url value="https://fhir.ee/OperationDefinition/patient-foreign"/>
+  <version value="1.0.0"/>
+  <name value="EEMPIPatientForeignSearch"/>
+  <title value="Patient Foreign"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <experimental value="false"/>
+  <date value="2023-03-26T15:21:02+11:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="The foreign operation perform complex search over patient resource."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <affectsState value="false"/>
+  <code value="foreign"/>
+  <resource value="Patient"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="identifier-country"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Identifikaatori väljaandja riigi 3 kohaline kood ISO standardi järgi. Kohustuslik."/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="birthdate"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Patient birthdate in form yyyy-mm-dd."/>
+    <type value="date"/>
+  </parameter>
+  <parameter>
+    <name value="gender"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Patient gender. Kohustuslik."/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="given"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Patient given name. Eesnimi. Otsing sõna alguse järgi, ei ole tõstetundlik."/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="family"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Patient family name. Perekonna nimi. Otsing sõna alguse järgi, ei ole tõstetundlik."/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="telecom"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Telekom'i väärtus, e-mail või tel. number."/>
+    <type value="ContactPoint"/>
+  </parameter>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="*"/>
+    <documentation value="Returns Bundle (with type collection) with Patient instances."/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

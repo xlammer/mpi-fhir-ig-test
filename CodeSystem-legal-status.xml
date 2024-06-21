@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="legal-status"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/legal-status</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style="white-space:nowrap">T0<a name="legal-status-T0"> </a></td><td>Teovõimeline</td><td/></tr><tr><td style="white-space:nowrap">T1<a name="legal-status-T1"> </a></td><td>Piiratud teovõimega valimisõiguseta</td><td>Piiratud valimisõiguseta</td></tr><tr><td style="white-space:nowrap">T3<a name="legal-status-T3"> </a></td><td>Piiratud teovõimega valimisõigusega</td><td>Piiratud valimisõigusega</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/legal-status"/>
+  <version value="1.0.0"/>
+  <name value="EEMPILegalStatus"/>
+  <title value="Legal Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="T0"/>
+    <display value="Teovõimeline"/>
+  </concept>
+  <concept>
+    <code value="T1"/>
+    <display value="Piiratud teovõimega valimisõiguseta"/>
+    <designation>
+      <language value="et"/>
+      <value value="Piiratud valimisõiguseta"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="T3"/>
+    <display value="Piiratud teovõimega valimisõigusega"/>
+    <designation>
+      <language value="et"/>
+      <value value="Piiratud valimisõigusega"/>
+    </designation>
+  </concept>
+</CodeSystem>

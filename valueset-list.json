@@ -1,0 +1,76 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.ee/ValueSet/disability-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIDisabilityLevel",
+      "title" : "Disability level",
+      "description" : "Puude raskusaste",
+      "systems" : ["https://fhir.ee/CodeSystem/disability-level"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/education-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIEducationLevel",
+      "title" : "Education Level",
+      "description" : "Patsiendi kõrgeim haridustase",
+      "systems" : ["https://fhir.ee/CodeSystem/education-level"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/guardian-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIGuardianStatus",
+      "title" : "Guardian Status",
+      "description" : "Eeskostja liik",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/incapacity-for-work-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIIncapacityForWorkCategory",
+      "title" : "Category of Incapacity For Work",
+      "description" : "Töövõimetuse määr",
+      "systems" : ["https://fhir.ee/CodeSystem/incapacity-for-work-category"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/legal-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPILegalStatus",
+      "title" : "Legal Status",
+      "description" : "Patsiendi teovõime staatus.",
+      "systems" : ["https://fhir.ee/CodeSystem/legal-status"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/occupation-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIOccupationType",
+      "title" : "Occupation Type",
+      "description" : "Töötamise liik",
+      "systems" : ["https://fhir.ee/CodeSystem/occupation-type"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/person-relationship-class",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPersonRelationshipClass",
+      "title" : "Person Relationship Class",
+      "description" : "Person relationship class",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleClass"]
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/power-of-attorney",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPowerOfAttorney",
+      "title" : "PowerOfAttorney Status",
+      "description" : "Hooldusõiguse liik",
+      "systems" : ["https://fhir.ee/CodeSystem/power-of-attorney"]
+    }
+  ]
+}

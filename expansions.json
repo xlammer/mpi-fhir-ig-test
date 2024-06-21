@@ -1,0 +1,644 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "a55cda03-a446-47b0-9551-d6529319bc66",
+  "meta" : {
+    "lastUpdated" : "2024-06-20T13:23:32.252+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://fhir.ee/ValueSet/disability-level",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-disability-level.html\">codesystem Disability level v1.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-disability-level-keskmine\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-level.html#disability-level-keskmine\">keskmine</a></td><td>https://fhir.ee/CodeSystem/disability-level</td><td>Keskmine puue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-disability-level-raske\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-level.html#disability-level-raske\">raske</a></td><td>https://fhir.ee/CodeSystem/disability-level</td><td>Raske puue</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-disability-level-sygav\"> </a>\u00a0\u00a0<a href=\"CodeSystem-disability-level.html#disability-level-sygav\">sygav</a></td><td>https://fhir.ee/CodeSystem/disability-level</td><td>Sügav puue</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/disability-level",
+      "version" : "1.0.0",
+      "name" : "EEMPIDisabilityLevel",
+      "title" : "Disability level",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8000bda0-5a9f-4682-9ee1-a1aa8e67fa57",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/CodeSystem/disability-level|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/CodeSystem/disability-level",
+          "code" : "keskmine",
+          "display" : "Keskmine puue"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/disability-level",
+          "code" : "raske",
+          "display" : "Raske puue"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/disability-level",
+          "code" : "sygav",
+          "display" : "Sügav puue"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/education-level",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-education-level.html\">codesystem Education level v1.0.0 (CodeSystem)</a></p><p>This value set contains 12 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A0\">A0</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Less than primary education</td><td><div><p>Hariduseta, alusharidus</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A1\">A1</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Primary education</td><td><div><p>Algharidus, praegune põhikooli 6 klassi, põhihariduse nõudeta kutseharidus</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A24\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A24\">A24</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Lower secondary general education</td><td><div><p>Põhiharidus</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A25\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A25\">A25</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Lower secondary vocational education</td><td><div><p>Kutseharidus koos põhihariduse omandamisega ja kutseharidus põhihariduse baasil</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A34\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A34\">A34</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Upper secondary general education</td><td><div><p>Üldkeskharidus</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A35\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A35\">A35</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Upper secondary vocational education</td><td><div><p>Kutsekeskharidus</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A4\">A4</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Post-secondary non-tertiary vocational education</td><td><div><p>Kutseharidus keskhariduse baasil</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A5\">A5</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Short-cycle tertiary education</td><td><div><p>Keskeriharidus keskhariduse baasil</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A6\">A6</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Bachelor's or equivalent level education level</td><td><div><p>Bakalaureus või sellega võrdsustatud, rakenduskõrgharidus</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A7\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A7\">A7</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Master's or equivalent level</td><td><div><p>Magister või sellega võrdsustatud</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A8\">A8</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Doctoral or equivalent level</td><td><div><p>Doktor või sellega võrdsustatud</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-education-level-A9\"> </a>\u00a0\u00a0<a href=\"CodeSystem-education-level.html#education-level-A9\">A9</a></td><td>https://fhir.ee/CodeSystem/education-level</td><td>Not elsewhere classified</td><td><div><p>Mujal nimetama</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/education-level",
+      "version" : "1.0.0",
+      "name" : "EEMPIEducationLevel",
+      "title" : "Education Level",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e2f693aa-c03b-45c0-9c91-e16f582f9458",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 12,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/CodeSystem/education-level|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A0",
+          "display" : "Less than primary education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A1",
+          "display" : "Primary education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A24",
+          "display" : "Lower secondary general education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A25",
+          "display" : "Lower secondary vocational education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A34",
+          "display" : "Upper secondary general education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A35",
+          "display" : "Upper secondary vocational education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A4",
+          "display" : "Post-secondary non-tertiary vocational education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A5",
+          "display" : "Short-cycle tertiary education"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A6",
+          "display" : "Bachelor's or equivalent level education level"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A7",
+          "display" : "Master's or equivalent level"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A8",
+          "display" : "Doctoral or equivalent level"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/education-level",
+          "code" : "A9",
+          "display" : "Not elsewhere classified"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/guardian-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 01-Feb 2024</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-58626002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/58626002\">58626002</a></td><td>http://snomed.info/sct</td><td>Legal guardian</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-365569001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/365569001\">365569001</a></td><td>http://snomed.info/sct</td><td>Wardship - finding</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/guardian-status",
+      "version" : "1.0.0",
+      "name" : "EEMPIGuardianStatus",
+      "title" : "Guardian Status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4225f2c1-c58a-4ed9-ad18-7c2ed3226cb4",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "58626002",
+          "display" : "Legal guardian"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "365569001",
+          "display" : "Wardship - finding"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/incapacity-for-work-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-incapacity-for-work-category.html\">codesystem Category of Incapacity For Work v1.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-incapacity-for-work-category-puudub\"> </a>\u00a0\u00a0<a href=\"CodeSystem-incapacity-for-work-category.html#incapacity-for-work-category-puudub\">puudub</a></td><td>https://fhir.ee/CodeSystem/incapacity-for-work-category</td><td>Puuduv töövõime</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-incapacity-for-work-category-osaline\"> </a>\u00a0\u00a0<a href=\"CodeSystem-incapacity-for-work-category.html#incapacity-for-work-category-osaline\">osaline</a></td><td>https://fhir.ee/CodeSystem/incapacity-for-work-category</td><td>Osaline töövõime</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-incapacity-for-work-category-taielik\"> </a>\u00a0\u00a0<a href=\"CodeSystem-incapacity-for-work-category.html#incapacity-for-work-category-taielik\">taielik</a></td><td>https://fhir.ee/CodeSystem/incapacity-for-work-category</td><td>Töövõime ei ole vähenenud</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/incapacity-for-work-category",
+      "version" : "1.0.0",
+      "name" : "EEMPIIncapacityForWorkCategory",
+      "title" : "Category of Incapacity For Work",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:7124c951-4b0c-4f4d-8483-affc19421e07",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/CodeSystem/incapacity-for-work-category|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/CodeSystem/incapacity-for-work-category",
+          "code" : "puudub",
+          "display" : "Puuduv töövõime"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/incapacity-for-work-category",
+          "code" : "osaline",
+          "display" : "Osaline töövõime"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/incapacity-for-work-category",
+          "code" : "taielik",
+          "display" : "Töövõime ei ole vähenenud"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/legal-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-legal-status.html\">codesystem Legal Status v1.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-legal-status-T0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-legal-status.html#legal-status-T0\">T0</a></td><td>https://fhir.ee/CodeSystem/legal-status</td><td>Teovõimeline</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-legal-status-T1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-legal-status.html#legal-status-T1\">T1</a></td><td>https://fhir.ee/CodeSystem/legal-status</td><td>Piiratud teovõimega valimisõiguseta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-legal-status-T3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-legal-status.html#legal-status-T3\">T3</a></td><td>https://fhir.ee/CodeSystem/legal-status</td><td>Piiratud teovõimega valimisõigusega</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/legal-status",
+      "version" : "1.0.0",
+      "name" : "EEMPILegalStatus",
+      "title" : "Legal Status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:186477b5-68b3-4b2b-8842-72581c5edea8",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/CodeSystem/legal-status|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/CodeSystem/legal-status",
+          "code" : "T0",
+          "display" : "Teovõimeline"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/legal-status",
+          "code" : "T1",
+          "display" : "Piiratud teovõimega valimisõiguseta"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/legal-status",
+          "code" : "T3",
+          "display" : "Piiratud teovõimega valimisõigusega"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/occupation-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-occupation-type.html\">codesystem Type of employment v1.0.0 (CodeSystem)</a></p><p>This value set contains 18 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-1\">1</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Tööleping</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-15\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-15\">15</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Abikaasatasu</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-2\">2</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Avalik teenistus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-3\">3</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Kõrgemad riigiteenijad</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-4\">4</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Omavalitsuse valitud või nimetatud liige</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-501\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-501\">501</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Vabatahtlik töö</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-504\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-504\">504</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Töötamine TM kohustusega Eestis, SM välisriigis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-505\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-505\">505</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>KOV komisjoni liige, kes ei ole KOV volikogu liige</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-506\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-506\">506</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Töötamine TM kohustusega Eestis ilma SM kohustuseta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-507\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-507\">507</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Viisa alusel - tööleping</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-6\">6</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Sotsiaalmaksukohustusega FIE abikaasa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-600\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-600\">600</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>VÕS leping</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-601\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-601\">601</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Juhtimis-, kontrollorgani liige</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-602\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-602\">602</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Viisa alusel - VÕS leping</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-603\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-603\">603</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Viisa alusel - juhtimis-, kontrollorgani liikme tasu</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-800\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-800\">800</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Tööleping laevapere liikme soodustusega</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-801\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-801\">801</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Meretööleping, juhtivtöötaja reisilaeval</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-occupation-type-802\"> </a>\u00a0\u00a0<a href=\"CodeSystem-occupation-type.html#occupation-type-802\">802</a></td><td>https://fhir.ee/CodeSystem/occupation-type</td><td>Meretööleping, töötaja reisilaeval</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/occupation-type",
+      "version" : "1.0.0",
+      "name" : "EEMPIOccupationType",
+      "title" : "Occupation Type",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e3632a2f-45b8-4341-ab1d-7626ec2fa21a",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 18,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/CodeSystem/occupation-type|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "1",
+          "display" : "Tööleping"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "15",
+          "display" : "Abikaasatasu"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "2",
+          "display" : "Avalik teenistus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "3",
+          "display" : "Kõrgemad riigiteenijad"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "4",
+          "display" : "Omavalitsuse valitud või nimetatud liige"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "501",
+          "display" : "Vabatahtlik töö"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "504",
+          "display" : "Töötamine TM kohustusega Eestis, SM välisriigis"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "505",
+          "display" : "KOV komisjoni liige, kes ei ole KOV volikogu liige"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "506",
+          "display" : "Töötamine TM kohustusega Eestis ilma SM kohustuseta"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "507",
+          "display" : "Viisa alusel - tööleping"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "6",
+          "display" : "Sotsiaalmaksukohustusega FIE abikaasa"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "600",
+          "display" : "VÕS leping"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "601",
+          "display" : "Juhtimis-, kontrollorgani liige"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "602",
+          "display" : "Viisa alusel - VÕS leping"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "603",
+          "display" : "Viisa alusel - juhtimis-, kontrollorgani liikme tasu"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "800",
+          "display" : "Tööleping laevapere liikme soodustusega"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "801",
+          "display" : "Meretööleping, juhtivtöötaja reisilaeval"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/occupation-type",
+          "code" : "802",
+          "display" : "Meretööleping, töötaja reisilaeval"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/person-relationship-class",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html\">codesystem RoleClass v4.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-RoleClass-CON\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-CON\">CON</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleClass</td><td>contact</td><td><div><p>A person or an organization (player) which provides or receives information regarding another entity (scoper). Examples; patient NOK and emergency contacts; guarantor contact; employer contact.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-RoleClass-GUARD\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-GUARD\">GUARD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleClass</td><td>guardian</td><td><div><p>Guardian of a ward</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-RoleClass-DEPEN\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-DEPEN\">DEPEN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-RoleClass</td><td>dependent</td><td><div><p><strong>Description:</strong> A role played by a person covered under a policy or program based on an association with a subscriber, which is recognized by the policy holder.</p>\n<p><strong>Note:</strong> The party playing the role of a dependent is not a claimant in the sense conveyed by the RoleClassCoveredParty CLAIM (claimant). However, a dependent may make a claim under a policy, e.g., a dependent under a health insurance policy may become the claimant for coverage under that policy for wellness examines or if injured and there is no liable third party. In the case of a dependent making a claim, a role type code INSCLM (insured claimant) subtypes the class to indicate that the dependent has filed a claim for services covered under the health insurance policy.</p>\n<p><strong>Example:</strong> The dependent has an association with the subscriber such as a financial dependency or personal relationship such as that of a spouse, or a natural or adopted child. The policy holder may be required by law to recognize certain associations or may have discretion about the associations. For example, a policy holder may dictate the criteria for the dependent status of adult children who are students, such as requiring full time enrollment, or may recognize domestic partners as dependents. Under certain circumstances, the dependent may be under the indirect authority of a responsible party acting as a surrogate for the subscriber, for example, if the subscriber is differently abled or deceased, a guardian ad Lidem or estate executor may be appointed to assume the subscriberaTMs legal standing in the relationship with the dependent.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/person-relationship-class",
+      "version" : "1.0.0",
+      "name" : "EEMPIPersonRelationshipClass",
+      "title" : "Person Relationship Class",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:e1eba616-fbef-45f0-bced-a1ef72b698b8",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass|4.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "CON",
+          "display" : "contact"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "GUARD",
+          "display" : "guardian"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+          "code" : "DEPEN",
+          "display" : "dependent"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.ee/ValueSet/power-of-attorney",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-power-of-attorney.html\">codesystem PowerOfAttorney Status v1.0.0 (CodeSystem)</a></p><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H9\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H9\">H9</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Lapse eraldamine vanemast</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H11\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H11\">H11</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Osaline isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H21\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H21\">H21</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Osaline varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H12\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H12\">H12</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Piiratud isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H22\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H22\">H22</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Piiratud varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H10\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H10\">H10</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Täielik isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H20\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H20\">H20</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Täielik varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.ee-CodeSystem-power-of-attorney-H19\"> </a>\u00a0\u00a0<a href=\"CodeSystem-power-of-attorney.html#power-of-attorney-H19\">H19</a></td><td>https://fhir.ee/CodeSystem/power-of-attorney</td><td>Vanema õigused</td></tr></table></div>"
+      },
+      "url" : "https://fhir.ee/ValueSet/power-of-attorney",
+      "version" : "1.0.0",
+      "name" : "EEMPIPowerOfAttorney",
+      "title" : "PowerOfAttorney Status",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2024-06-20T13:23:32+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "EE",
+          "display" : "Estonia"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:a13cb8e0-bd27-4e55-b9ce-26f969520356",
+        "timestamp" : "2024-06-20T13:26:58+00:00",
+        "total" : 8,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.ee/CodeSystem/power-of-attorney|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H9",
+          "display" : "Lapse eraldamine vanemast"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H11",
+          "display" : "Osaline isikuhooldusõigus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H21",
+          "display" : "Osaline varahooldusõigus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H12",
+          "display" : "Piiratud isikuhooldusõigus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H22",
+          "display" : "Piiratud varahooldusõigus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H10",
+          "display" : "Täielik isikuhooldusõigus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H20",
+          "display" : "Täielik varahooldusõigus"
+        },
+        {
+          "system" : "https://fhir.ee/CodeSystem/power-of-attorney",
+          "code" : "H19",
+          "display" : "Vanema õigused"
+        }]
+      }
+    }
+  }]
+}

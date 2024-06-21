@@ -1,0 +1,756 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/all-languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AllLanguages",
+      "title" : "All Languages",
+      "description" : "This value set includes all possible codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.21"],
+      "sources" : ["2.16.840.1.113883.4.642.3.21"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability",
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "Data Absent Reason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierTypeCodes",
+      "title" : "Identifier Type Codes",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (see http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.891",
+        "2.16.840.1.113883.4.642.3.20"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability",
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "Link Type",
+      "description" : "The type of link between this Patient resource and another Patient/RelatedPerson resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.3.423",
+        "2.16.840.1.113883.4.642.3.412"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MaritalStatusCodes",
+      "title" : "Marital Status Codes",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.216",
+        "2.16.840.1.113883.4.642.3.396",
+        "2.16.840.1.113883.4.642.3.383"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeNormalValueCodes",
+      "title" : "Observation Reference Range Normal Value Codes",
+      "description" : "Codes that describe the normal value in the reference range, such as “Negative” or “Absent”",
+      "systems" : ["http://hl7.org/fhir/observation-referencerange-normalvalue"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3264"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3264"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the type of triggeredBy observation.",
+      "systems" : ["http://hl7.org/fhir/observation-triggeredbytype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3265"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3265"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient Relationship Type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.259",
+        "2.16.840.1.113883.4.642.3.442",
+        "2.16.840.1.113883.4.642.3.449"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.259",
+        "2.16.840.1.113883.4.642.3.442",
+        "2.16.840.1.113883.4.642.3.449"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-RoleClass",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "RoleClass",
+      "title" : "RoleClass",
+      "description" : "This table includes codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleClass"],
+      "oids" : ["2.16.840.1.113883.1.11.11555"],
+      "sources" : ["2.16.840.1.113883.1.11.11555"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/administrative-gender",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBaseAdministrativeGender",
+      "title" : "Administrative Gender",
+      "description" : "Administrative Gender",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/disability-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIDisabilityLevel",
+      "title" : "Disability level",
+      "description" : "Puude raskusaste",
+      "systems" : ["https://fhir.ee/CodeSystem/disability-level"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/education-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIEducationLevel",
+      "title" : "Education Level",
+      "description" : "Patsiendi kõrgeim haridustase",
+      "systems" : ["https://fhir.ee/CodeSystem/education-level"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/ee-observation-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBaseObservationCategory",
+      "title" : "Observation Category",
+      "description" : "Observation category",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation",
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status",
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level",
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney",
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work",
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status",
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status",
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/guardian-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIGuardianStatus",
+      "title" : "Guardian Status",
+      "description" : "Eeskostja liik",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/incapacity-for-work-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIIncapacityForWorkCategory",
+      "title" : "Category of Incapacity For Work",
+      "description" : "Töövõimetuse määr",
+      "systems" : ["https://fhir.ee/CodeSystem/incapacity-for-work-category"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/legal-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPILegalStatus",
+      "title" : "Legal Status",
+      "description" : "Patsiendi teovõime staatus.",
+      "systems" : ["https://fhir.ee/CodeSystem/legal-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/occupation",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBaseOccupation",
+      "title" : "Occupation",
+      "description" : "Classification of Occupations",
+      "systems" : ["https://fhir.ee/CodeSystem/occupation"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/occupation-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIOccupationType",
+      "title" : "Occupation Type",
+      "description" : "Töötamise liik",
+      "systems" : ["https://fhir.ee/CodeSystem/occupation-type"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/patient-identifier-domain",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBasePatientIdentifierDomain",
+      "title" : "Patient Identifier Domain",
+      "description" : "Identity systems acceptable for patient identification",
+      "systems" : ["https://fhir.ee/CodeSystem/identifier-domain"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-patient.html" : "EE MPI Patient",
+      "StructureDefinition-ee-mpi-patient-verified.html" : "EE MPI Patient Verified",
+      "StructureDefinition-ee-mpi-patient-newborn.html" : "EE MPI Patient Newborn",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person",
+      "StructureDefinition-ee-mpi-patient-stillborn.html" : "EE MPI Patient Stillborn",
+      "StructureDefinition-ee-mpi-patient-unknown.html" : "EE MPI Patient Unknown"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/person-relationship",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBasePersonRelationship",
+      "title" : "Person Relationship",
+      "description" : "Suhe patsiendiga",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-person-relationship-v3-mpi.html" : "Mapping of legacy V3 person relationship to MPI",
+      "ConceptMap-person-relationship-mpi-v3.html" : "Mapping of MPI person relationship to legacy V3",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/person-relationship-class",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPersonRelationshipClass",
+      "title" : "Person Relationship Class",
+      "description" : "Person relationship class",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleClass"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/power-of-attorney",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPowerOfAttorney",
+      "title" : "PowerOfAttorney Status",
+      "description" : "Hooldusõiguse liik",
+      "systems" : ["https://fhir.ee/CodeSystem/power-of-attorney"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney"
+    }
+  ]
+}

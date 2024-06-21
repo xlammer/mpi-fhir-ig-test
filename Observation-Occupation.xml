@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Occupation"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="Occupation"> </a><a name="hcOccupation"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;Occupation&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-mpi-socialhistory-occupation.html">EE MPI SocialHistory Occupation</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social history <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: History of Occupation <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#11341-5; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#184104002)</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: <a href="Organization-Org1.html">Organization/Org1</a> &quot;Kodality General Hospital&quot;</p><blockquote><p><b>component</b></p><p><b>code</b>: Job details <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#160922003)</span></p><p><b>value</b>: Pediaater <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/CodeSystem-occupation.html">Classification of Occupations</a>#22122501)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Type of job <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#224361009)</span></p><p><b>value</b>: Vabatahtlik töö <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-occupation-type.html">Type of employment</a>#501)</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11341-5"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="184104002"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2021-11-23"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="Organization/Org1"/>
+  </performer>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="160922003"/>
+        <display value="Job details"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/occupation"/>
+        <code value="22122501"/>
+        <display value="Pediaater"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="224361009"/>
+        <display value="Type of job"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://fhir.ee/CodeSystem/occupation-type"/>
+        <code value="501"/>
+        <display value="Vabatahtlik töö"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+</Observation>

@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/CodeSystem/incapacity-for-work-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "incapacity-for-work-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/incapacity-for-work-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">puudub<a name=\"incapacity-for-work-category-puudub\"> </a></td><td>Puuduv töövõime</td><td>Puuduv töövõime</td></tr><tr><td style=\"white-space:nowrap\">osaline<a name=\"incapacity-for-work-category-osaline\"> </a></td><td>Osaline töövõime</td><td>Osaline töövõime</td></tr><tr><td style=\"white-space:nowrap\">taielik<a name=\"incapacity-for-work-category-taielik\"> </a></td><td>Töövõime ei ole vähenenud</td><td>Töövõime ei ole vähenenud</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/CodeSystem/incapacity-for-work-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEMPIIncapacityForWorkCategory"] ; # 
+  fhir:title [ fhir:v "Category of Incapacity For Work"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-20T13:23:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Töövõimetuse määr"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "puudub" ] ;
+     fhir:display [ fhir:v "Puuduv töövõime" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "et" ] ;
+       fhir:value [ fhir:v "Puuduv töövõime" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "osaline" ] ;
+     fhir:display [ fhir:v "Osaline töövõime" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "et" ] ;
+       fhir:value [ fhir:v "Osaline töövõime" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "taielik" ] ;
+     fhir:display [ fhir:v "Töövõime ei ole vähenenud" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "et" ] ;
+       fhir:value [ fhir:v "Töövõime ei ole vähenenud" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

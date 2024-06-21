@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Patient",
+  "id" : "pat-newborn",
+  "meta" : {
+    "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Maasikas (Temp)</b> male, DoB: 2007-12-12 ( <a href=\"https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html\" title=\"The personal national identification code of Estonian citizens and residents.\">Estonian Personal National Identification Code</a>/50712121111)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">1</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.ee/sid/pid/est/ni",
+    "value" : "50712121111"
+  }],
+  "active" : true,
+  "name" : [{
+    "use" : "temp",
+    "family" : "Maasikas"
+  }],
+  "gender" : "male",
+  "birthDate" : "2007-12-12",
+  "multipleBirthInteger" : 1
+}

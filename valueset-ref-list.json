@@ -1,0 +1,143 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "MaritalStatusCodes",
+      "title" : "Marital Status Codes",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-marital-status.html" : "EE MPI SocialHistory Marital Status"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/disability-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIDisabilityLevel",
+      "title" : "Disability level",
+      "description" : "Puude raskusaste",
+      "systems" : ["https://fhir.ee/CodeSystem/disability-level"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-disability.html" : "EE MPI SocialHistory Disability"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/education-level",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIEducationLevel",
+      "title" : "Education Level",
+      "description" : "Patsiendi kõrgeim haridustase",
+      "systems" : ["https://fhir.ee/CodeSystem/education-level"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-education-level.html" : "EE MPI SocialHistory Education Level"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/guardian-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIGuardianStatus",
+      "title" : "Guardian Status",
+      "description" : "Eeskostja liik",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html" : "EE MPI SocialHistory Legal Guardian Status"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/incapacity-for-work-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIIncapacityForWorkCategory",
+      "title" : "Category of Incapacity For Work",
+      "description" : "Töövõimetuse määr",
+      "systems" : ["https://fhir.ee/CodeSystem/incapacity-for-work-category"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.html" : "EE MPI SocialHistory Incapacity For Work"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/legal-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPILegalStatus",
+      "title" : "Legal Status",
+      "description" : "Patsiendi teovõime staatus.",
+      "systems" : ["https://fhir.ee/CodeSystem/legal-status"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-legal-status.html" : "EE MPI SocialHistory Legal Status"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/occupation",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBaseOccupation",
+      "title" : "Occupation",
+      "description" : "Classification of Occupations",
+      "systems" : ["https://fhir.ee/CodeSystem/occupation"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/occupation-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIOccupationType",
+      "title" : "Occupation Type",
+      "description" : "Töötamise liik",
+      "systems" : ["https://fhir.ee/CodeSystem/occupation-type"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-occupation.html" : "EE MPI SocialHistory Occupation"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/person-relationship",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEBasePersonRelationship",
+      "title" : "Person Relationship",
+      "description" : "Suhe patsiendiga",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ConceptMap-person-relationship-v3-mpi.html" : "Mapping of legacy V3 person relationship to MPI",
+      "ConceptMap-person-relationship-mpi-v3.html" : "Mapping of MPI person relationship to legacy V3",
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/person-relationship-class",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPersonRelationshipClass",
+      "title" : "Person Relationship Class",
+      "description" : "Person relationship class",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleClass"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-related-person.html" : "EE MPI Related Person"
+    },
+    {
+      "url" : "https://fhir.ee/ValueSet/power-of-attorney",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EEMPIPowerOfAttorney",
+      "title" : "PowerOfAttorney Status",
+      "description" : "Hooldusõiguse liik",
+      "systems" : ["https://fhir.ee/CodeSystem/power-of-attorney"],
+      "uses" : {
+      },
+      "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html" : "EE MPI SocialHistory Power Of Attorney"
+    }
+  ]
+}

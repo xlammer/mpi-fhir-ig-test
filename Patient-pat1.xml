@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="pat1"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-mpi-patient-verified"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Igor Bossenko (Official)</b> male, DoB: 1973-02-10 ( <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html" title="The personal national identification code of Estonian citizens and residents.">Estonian Personal National Identification Code</a>/37302102711)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li><code>https://fhir.ee/sid/pid/fin/ni</code>/31002736540023</li><li><code>https://fhir.ee/sid/pid/est/ppn</code>/K0307337 (period: (?) --&gt; 2023-12-28)</li><li><code>https://fhir.ee/sid/pid/est/mr</code>/82746127612</li><li><code>https://fhir.ee/sid/pid/est/prn/90006399</code>/123e4567-e89b-12d3-a456-426614174000</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">Valukoja 10, Tallinn(work)</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/est/ni"/>
+    <value value="37302102711"/>
+  </identifier>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/fin/ni"/>
+    <value value="31002736540023"/>
+  </identifier>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/est/ppn"/>
+    <value value="K0307337"/>
+    <period>
+      <end value="2023-12-28"/>
+    </period>
+    <assigner>
+      <display value="Estonian Police and Board Agency"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/est/mr"/>
+    <value value="82746127612"/>
+  </identifier>
+  <identifier>
+    <system value="https://fhir.ee/sid/pid/est/prn/90006399"/>
+    <value value="123e4567-e89b-12d3-a456-426614174000"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="Bossenko"/>
+    <given value="Igor"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1973-02-10"/>
+  <address>
+    <extension url="https://fhir.ee/StructureDefinition/ee-ads-adr-id">
+      <valueCoding>
+        <system value="https://fhir.ee/CodeSystem/ads-adr-id"/>
+        <code value="2280361"/>
+      </valueCoding>
+    </extension>
+    <extension url="https://fhir.ee/StructureDefinition/ee-ads-oid">
+      <valueCoding>
+        <system value="https://fhir.ee/CodeSystem/ads-oid"/>
+        <code value="ME03379409"/>
+      </valueCoding>
+    </extension>
+    <use value="work"/>
+    <text value="Valukoja 10, Tallinn"/>
+    <postalCode value="14215"/>
+    <country value="EE"/>
+  </address>
+</Patient>

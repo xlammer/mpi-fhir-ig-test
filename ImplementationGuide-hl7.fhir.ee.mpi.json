@@ -1,0 +1,1145 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "hl7.fhir.ee.mpi",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EEMPI</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi</pre></div>"
+  },
+  "url" : "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi",
+  "version" : "1.0.0",
+  "name" : "EEMPI",
+  "title" : "Patsientide üldandmete teenus / Master Patient Index",
+  "status" : "draft",
+  "date" : "2024-06-20T13:23:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "packageId" : "hl7.fhir.ee.mpi",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "5.5.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions",
+    "version" : "current"
+  },
+  {
+    "id" : "hl7_fhir_ee_base",
+    "uri" : "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base",
+    "packageId" : "hl7.fhir.ee.base",
+    "version" : "current"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/incapacity-for-work-category"
+      },
+      "name" : "Category of Incapacity For Work",
+      "description" : "Töövõimetuse määr",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/incapacity-for-work-category"
+      },
+      "name" : "Category of Incapacity For Work",
+      "description" : "Töövõimetuse määr",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Disability"
+      },
+      "name" : "Disability",
+      "description" : "Example of patient disability",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/disability-level"
+      },
+      "name" : "Disability level",
+      "description" : "Puude raskusaste",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/disability-level"
+      },
+      "name" : "Disability level",
+      "description" : "Puude raskusaste",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/education-level"
+      },
+      "name" : "Education Level",
+      "description" : "Patsiendi kõrgeim haridustase",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/education-level"
+      },
+      "name" : "Education level",
+      "description" : "Omandatud kõrgeim haridustase",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EducationLevel"
+      },
+      "name" : "EducationLevel",
+      "description" : "Example of patient education",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-patient"
+      },
+      "name" : "EE MPI Patient",
+      "description" : "Common MPI limitations on Patient resouce",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-patient-newborn"
+      },
+      "name" : "EE MPI Patient Newborn",
+      "description" : "Profiil vastsündinu andmete kirjeldamiseks",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-patient-stillborn"
+      },
+      "name" : "EE MPI Patient Stillborn",
+      "description" : "Profiil surnult sündinu andmete kirjeldamiseks",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-patient-unknown"
+      },
+      "name" : "EE MPI Patient Unknown",
+      "description" : "Kasutamiseks EMO-s, kiirabis, anonüümsete patsientide ning keskkonnaproovide puhul",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-patient-verified"
+      },
+      "name" : "EE MPI Patient Verified",
+      "description" : "Retseptsioonis identifitseeritud MPI Patsient.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-related-person"
+      },
+      "name" : "EE MPI Related Person",
+      "description" : "Patsient ja tema kontakt- ja seotud isikud.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-disability"
+      },
+      "name" : "EE MPI SocialHistory Disability",
+      "description" : "Puude raskusaste",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-education-level"
+      },
+      "name" : "EE MPI SocialHistory Education Level",
+      "description" : "Haridustase",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-incapacity-for-work"
+      },
+      "name" : "EE MPI SocialHistory Incapacity For Work",
+      "description" : "Töövõimetuse määr",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"
+      },
+      "name" : "EE MPI SocialHistory Legal Guardian Status",
+      "description" : "Seadusliku eeskostja staatus",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-legal-status"
+      },
+      "name" : "EE MPI SocialHistory Legal Status",
+      "description" : "Patsiendi teovõime staatus.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-marital-status"
+      },
+      "name" : "EE MPI SocialHistory Marital Status",
+      "description" : "Abielu või suhte liik.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-occupation"
+      },
+      "name" : "EE MPI SocialHistory Occupation",
+      "description" : "Töötamine",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ee-mpi-socialhistory-power-of-attorney"
+      },
+      "name" : "EE MPI SocialHistory Power Of Attorney",
+      "description" : "Hooldusõigus",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Org1"
+      },
+      "name" : "ExampleHospital",
+      "description" : "Example of organization Org1",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-generate-mrn"
+      },
+      "name" : "Generate Medical Record Number",
+      "description" : "Generate the new unique Medical Record Number may be used for unknown/anonymous patient's identification.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/guardian-status"
+      },
+      "name" : "Guardian Status",
+      "description" : "Eeskostja liik",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/IncapacityForWork"
+      },
+      "name" : "IncapacityForWork",
+      "description" : "Example of patient incapacity for work",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-incapacity-for-work"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/legal-status"
+      },
+      "name" : "Legal Status",
+      "description" : "Patsiendi teovõime staatus.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/legal-status"
+      },
+      "name" : "Legal Status",
+      "description" : "The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/LegalGuardianStatus"
+      },
+      "name" : "LegalGuardianStatus",
+      "description" : "Example of patient legal duardian",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/LegalStatus"
+      },
+      "name" : "LegalStatus",
+      "description" : "Example of patient legal status",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/identity-system-to-oid"
+      },
+      "name" : "Mapping of Identity System to OID",
+      "description" : "A mapping between the Identity System for person identification and ENHIS OID systems",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/person-relationship-v3-mpi"
+      },
+      "name" : "Mapping of legacy V3 person relationship to MPI",
+      "description" : "A mapping between the legacy and new person relationships",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/person-relationship-mpi-v3"
+      },
+      "name" : "Mapping of MPI person relationship to legacy V3",
+      "description" : "A mapping between the new and legacy person relationships",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaritalStatus"
+      },
+      "name" : "MaritalStatus",
+      "description" : "Example of patient marital status",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/national-identifier-requirement"
+      },
+      "name" : "National identifier requirement",
+      "description" : "Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Occupation"
+      },
+      "name" : "Occupation",
+      "description" : "Example of patient occupation",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/occupation-type"
+      },
+      "name" : "Occupation Type",
+      "description" : "Töötamise liik",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-disability"
+      },
+      "name" : "Patient Disability",
+      "description" : "The patient disability from Social Insurance Board (SKA).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-education"
+      },
+      "name" : "Patient Education",
+      "description" : "The highest education level in the Education Register.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-foreign"
+      },
+      "name" : "Patient Foreign",
+      "description" : "The foreign operation perform complex search over patient resource.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-incapacity-for-work"
+      },
+      "name" : "Patient incapacity for work",
+      "description" : "The observation of patient incapacity for work from Social Insurance Board (SKA).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-legal-guardian"
+      },
+      "name" : "Patient Legal Guardians",
+      "description" : "The list of legal guardians specified in the Population Register.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-link"
+      },
+      "name" : "Patient Link",
+      "description" : "The link operation is used to link two patient resources. One of the two patients is identified as the source and one as the target. The link with type 'replaces' created from source to destination patient, the another link with type 'replaced-byä created from destination to source patient. As result of linking the destination patient is deactivated.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-lookup"
+      },
+      "name" : "Patient Lookup",
+      "description" : "The lookup operation looking for patient data in the external registers.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-occupation"
+      },
+      "name" : "Patient occupation",
+      "description" : "The observation of patient occupations from Employment Register (TÖR).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-power-of-attorney"
+      },
+      "name" : "Patient power of attorneys",
+      "description" : "The list of power of attorneys in the Population Register.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/patient-unlink"
+      },
+      "name" : "Patient Unlink",
+      "description" : "The unlink operation is used to unlink two patient resources. One of the two patients is identified as the source and one as the target. The links between the source and destination Patients will be removed. Destination resource will be reactivated.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pat1"
+      },
+      "name" : "PatientIgorBossenko",
+      "description" : "Patsient erinevate identifikaatoritega",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-patient-verified"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/relpat11"
+      },
+      "name" : "PatientIgorBossenkoSon",
+      "description" : "Example of patient son",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-related-person"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/relpat12"
+      },
+      "name" : "PatientIgorBossenkoWife",
+      "description" : "Example of patient wife and emergency contact",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-related-person"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pat2"
+      },
+      "name" : "PatientJohnDoe",
+      "description" : "Foreigner with minimal dataset.",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pat-newborn"
+      },
+      "name" : "PatientNewborn",
+      "description" : "Example of newborn patient",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pat-stillborn"
+      },
+      "name" : "PatientStillborn",
+      "description" : "Example of stillborn patient",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/pat-unk"
+      },
+      "name" : "PatientUnknown",
+      "description" : "Example of unknown patient",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/person-relationship-class"
+      },
+      "name" : "Person Relationship Class",
+      "description" : "Person relationship class",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PowerOfAttorney"
+      },
+      "name" : "PowerOfAttorney",
+      "description" : "Example of patient attorney",
+      "isExample" : true,
+      "profile" : ["https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/power-of-attorney"
+      },
+      "name" : "PowerOfAttorney Status",
+      "description" : "Hooldusõiguse liik",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/power-of-attorney"
+      },
+      "name" : "PowerOfAttorney Status",
+      "description" : "Hooldusõiguse liik",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/occupation-type"
+      },
+      "name" : "Type of employment",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Sissejuhatus",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "patient.html",
+        "name" : "patient.html",
+        "title" : "Patsiendid",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "identifiers.html",
+        "name" : "identifiers.html",
+        "title" : "Identifikaatorid",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "dev.html",
+        "name" : "dev.html",
+        "title" : "Juhend arendajale",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "link.html",
+        "name" : "link.html",
+        "title" : "Patsientide sidumine ja lahti sidumine",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "errors.html",
+        "name" : "errors.html",
+        "title" : "Vead",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "operations.html",
+        "name" : "operations.html",
+        "title" : "Toetavad operatsioonid",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "checklist.html",
+        "name" : "checklist.html",
+        "title" : "Checklist",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "contact.html",
+        "name" : "contact.html",
+        "title" : "Contact Us",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "download.html",
+        "name" : "download.html",
+        "title" : "Download",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "uc.html",
+        "name" : "uc.html",
+        "title" : "Kasutusjuhud",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "checks.html",
+        "name" : "checks.html",
+        "title" : "Kontrollid",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "hl7v3.html",
+        "name" : "hl7v3.html",
+        "title" : "Seos HL7 V3-ga ja CDA-ga",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2023+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ballot"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "https://fhir.ee/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/CodeSystem/national-identifier-requirement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "national-identifier-requirement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/national-identifier-requirement</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">EST<a name=\"national-identifier-requirement-EST\"> </a></td><td>Eesti</td></tr><tr><td style=\"white-space:nowrap\">BGR<a name=\"national-identifier-requirement-BGR\"> </a></td><td>Bulgaaria</td></tr><tr><td style=\"white-space:nowrap\">CZE<a name=\"national-identifier-requirement-CZE\"> </a></td><td>Tšehhi</td></tr><tr><td style=\"white-space:nowrap\">LVA<a name=\"national-identifier-requirement-LVA\"> </a></td><td>Läti</td></tr><tr><td style=\"white-space:nowrap\">MLT<a name=\"national-identifier-requirement-MLT\"> </a></td><td>Malta</td></tr><tr><td style=\"white-space:nowrap\">ROU<a name=\"national-identifier-requirement-ROU\"> </a></td><td>Rumeenia</td></tr><tr><td style=\"white-space:nowrap\">ALB<a name=\"national-identifier-requirement-ALB\"> </a></td><td>Albaania</td></tr><tr><td style=\"white-space:nowrap\">BIH<a name=\"national-identifier-requirement-BIH\"> </a></td><td>Bosnia ja Hertsogoviina</td></tr><tr><td style=\"white-space:nowrap\">MNE<a name=\"national-identifier-requirement-MNE\"> </a></td><td>Montenegro</td></tr><tr><td style=\"white-space:nowrap\">MKD<a name=\"national-identifier-requirement-MKD\"> </a></td><td>Põhja-Makedoonia</td></tr><tr><td style=\"white-space:nowrap\">SRB<a name=\"national-identifier-requirement-SRB\"> </a></td><td>Serbia</td></tr><tr><td style=\"white-space:nowrap\">TUR<a name=\"national-identifier-requirement-TUR\"> </a></td><td>Türgi</td></tr><tr><td style=\"white-space:nowrap\">GEO<a name=\"national-identifier-requirement-GEO\"> </a></td><td>Gruusia</td></tr><tr><td style=\"white-space:nowrap\">ZAF<a name=\"national-identifier-requirement-ZAF\"> </a></td><td>Lõuna-Aafrika Vabariik</td></tr><tr><td style=\"white-space:nowrap\">ZWE<a name=\"national-identifier-requirement-ZWE\"> </a></td><td>Zimbabwe</td></tr><tr><td style=\"white-space:nowrap\">ARG<a name=\"national-identifier-requirement-ARG\"> </a></td><td>Argentiina</td></tr><tr><td style=\"white-space:nowrap\">BRA<a name=\"national-identifier-requirement-BRA\"> </a></td><td>Brasiilia</td></tr><tr><td style=\"white-space:nowrap\">MEX<a name=\"national-identifier-requirement-MEX\"> </a></td><td>Mehhiko</td></tr><tr><td style=\"white-space:nowrap\">VEN<a name=\"national-identifier-requirement-VEN\"> </a></td><td>Venetsueela</td></tr><tr><td style=\"white-space:nowrap\">BHR<a name=\"national-identifier-requirement-BHR\"> </a></td><td>Bahrein</td></tr><tr><td style=\"white-space:nowrap\">ISR<a name=\"national-identifier-requirement-ISR\"> </a></td><td>Israel</td></tr><tr><td style=\"white-space:nowrap\">KAZ<a name=\"national-identifier-requirement-KAZ\"> </a></td><td>Kasashtan</td></tr><tr><td style=\"white-space:nowrap\">KWT<a name=\"national-identifier-requirement-KWT\"> </a></td><td>Kuveit</td></tr><tr><td style=\"white-space:nowrap\">MYS<a name=\"national-identifier-requirement-MYS\"> </a></td><td>Malaisia</td></tr><tr><td style=\"white-space:nowrap\">NPL<a name=\"national-identifier-requirement-NPL\"> </a></td><td>Nepaal</td></tr><tr><td style=\"white-space:nowrap\">PAK<a name=\"national-identifier-requirement-PAK\"> </a></td><td>Pakistan</td></tr><tr><td style=\"white-space:nowrap\">TWN<a name=\"national-identifier-requirement-TWN\"> </a></td><td>Taiwan</td></tr><tr><td style=\"white-space:nowrap\">THA<a name=\"national-identifier-requirement-THA\"> </a></td><td>Tai</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/CodeSystem/national-identifier-requirement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEMPINationalIdentifierRequirement"] ; # 
+  fhir:title [ fhir:v "National identifier requirement"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-20T13:23:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "28"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "EST" ] ;
+     fhir:display [ fhir:v "Eesti" ]
+  ] [
+     fhir:code [ fhir:v "BGR" ] ;
+     fhir:display [ fhir:v "Bulgaaria" ]
+  ] [
+     fhir:code [ fhir:v "CZE" ] ;
+     fhir:display [ fhir:v "Tšehhi" ]
+  ] [
+     fhir:code [ fhir:v "LVA" ] ;
+     fhir:display [ fhir:v "Läti" ]
+  ] [
+     fhir:code [ fhir:v "MLT" ] ;
+     fhir:display [ fhir:v "Malta" ]
+  ] [
+     fhir:code [ fhir:v "ROU" ] ;
+     fhir:display [ fhir:v "Rumeenia" ]
+  ] [
+     fhir:code [ fhir:v "ALB" ] ;
+     fhir:display [ fhir:v "Albaania" ]
+  ] [
+     fhir:code [ fhir:v "BIH" ] ;
+     fhir:display [ fhir:v "Bosnia ja Hertsogoviina" ]
+  ] [
+     fhir:code [ fhir:v "MNE" ] ;
+     fhir:display [ fhir:v "Montenegro" ]
+  ] [
+     fhir:code [ fhir:v "MKD" ] ;
+     fhir:display [ fhir:v "Põhja-Makedoonia" ]
+  ] [
+     fhir:code [ fhir:v "SRB" ] ;
+     fhir:display [ fhir:v "Serbia" ]
+  ] [
+     fhir:code [ fhir:v "TUR" ] ;
+     fhir:display [ fhir:v "Türgi" ]
+  ] [
+     fhir:code [ fhir:v "GEO" ] ;
+     fhir:display [ fhir:v "Gruusia" ]
+  ] [
+     fhir:code [ fhir:v "ZAF" ] ;
+     fhir:display [ fhir:v "Lõuna-Aafrika Vabariik" ]
+  ] [
+     fhir:code [ fhir:v "ZWE" ] ;
+     fhir:display [ fhir:v "Zimbabwe" ]
+  ] [
+     fhir:code [ fhir:v "ARG" ] ;
+     fhir:display [ fhir:v "Argentiina" ]
+  ] [
+     fhir:code [ fhir:v "BRA" ] ;
+     fhir:display [ fhir:v "Brasiilia" ]
+  ] [
+     fhir:code [ fhir:v "MEX" ] ;
+     fhir:display [ fhir:v "Mehhiko" ]
+  ] [
+     fhir:code [ fhir:v "VEN" ] ;
+     fhir:display [ fhir:v "Venetsueela" ]
+  ] [
+     fhir:code [ fhir:v "BHR" ] ;
+     fhir:display [ fhir:v "Bahrein" ]
+  ] [
+     fhir:code [ fhir:v "ISR" ] ;
+     fhir:display [ fhir:v "Israel" ]
+  ] [
+     fhir:code [ fhir:v "KAZ" ] ;
+     fhir:display [ fhir:v "Kasashtan" ]
+  ] [
+     fhir:code [ fhir:v "KWT" ] ;
+     fhir:display [ fhir:v "Kuveit" ]
+  ] [
+     fhir:code [ fhir:v "MYS" ] ;
+     fhir:display [ fhir:v "Malaisia" ]
+  ] [
+     fhir:code [ fhir:v "NPL" ] ;
+     fhir:display [ fhir:v "Nepaal" ]
+  ] [
+     fhir:code [ fhir:v "PAK" ] ;
+     fhir:display [ fhir:v "Pakistan" ]
+  ] [
+     fhir:code [ fhir:v "TWN" ] ;
+     fhir:display [ fhir:v "Taiwan" ]
+  ] [
+     fhir:code [ fhir:v "THA" ] ;
+     fhir:display [ fhir:v "Tai" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

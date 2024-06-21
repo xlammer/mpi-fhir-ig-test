@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.ee.mpi"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>EEMPI</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi</pre></div>
+  </text>
+  <url value="https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi"/>
+  <version value="1.0.0"/>
+  <name value="EEMPI"/>
+  <title value="Patsientide üldandmete teenus / Master Patient Index"/>
+  <status value="draft"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.ee.mpi"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="5.5.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions"/>
+    <version value="current"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_ee_base">
+    <uri value="https://fhir.ee/ImplementationGuide/hl7.fhir.ee.base"/>
+    <packageId value="hl7.fhir.ee.base"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/incapacity-for-work-category"/>
+      </reference>
+      <name value="Category of Incapacity For Work"/>
+      <description value="Töövõimetuse määr"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/incapacity-for-work-category"/>
+      </reference>
+      <name value="Category of Incapacity For Work"/>
+      <description value="Töövõimetuse määr"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Disability"/>
+      </reference>
+      <name value="Disability"/>
+      <description value="Example of patient disability"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/disability-level"/>
+      </reference>
+      <name value="Disability level"/>
+      <description value="Puude raskusaste"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/disability-level"/>
+      </reference>
+      <name value="Disability level"/>
+      <description value="Puude raskusaste"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/education-level"/>
+      </reference>
+      <name value="Education Level"/>
+      <description value="Patsiendi kõrgeim haridustase"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/education-level"/>
+      </reference>
+      <name value="Education level"/>
+      <description value="Omandatud kõrgeim haridustase"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EducationLevel"/>
+      </reference>
+      <name value="EducationLevel"/>
+      <description value="Example of patient education"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-patient"/>
+      </reference>
+      <name value="EE MPI Patient"/>
+      <description value="Common MPI limitations on Patient resouce"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-patient-newborn"/>
+      </reference>
+      <name value="EE MPI Patient Newborn"/>
+      <description value="Profiil vastsündinu andmete kirjeldamiseks"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-patient-stillborn"/>
+      </reference>
+      <name value="EE MPI Patient Stillborn"/>
+      <description value="Profiil surnult sündinu andmete kirjeldamiseks"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-patient-unknown"/>
+      </reference>
+      <name value="EE MPI Patient Unknown"/>
+      <description value="Kasutamiseks EMO-s, kiirabis, anonüümsete patsientide ning keskkonnaproovide puhul"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-patient-verified"/>
+      </reference>
+      <name value="EE MPI Patient Verified"/>
+      <description value="Retseptsioonis identifitseeritud MPI Patsient."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-related-person"/>
+      </reference>
+      <name value="EE MPI Related Person"/>
+      <description value="Patsient ja tema kontakt- ja seotud isikud."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-disability"/>
+      </reference>
+      <name value="EE MPI SocialHistory Disability"/>
+      <description value="Puude raskusaste"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-education-level"/>
+      </reference>
+      <name value="EE MPI SocialHistory Education Level"/>
+      <description value="Haridustase"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-incapacity-for-work"/>
+      </reference>
+      <name value="EE MPI SocialHistory Incapacity For Work"/>
+      <description value="Töövõimetuse määr"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"/>
+      </reference>
+      <name value="EE MPI SocialHistory Legal Guardian Status"/>
+      <description value="Seadusliku eeskostja staatus"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-legal-status"/>
+      </reference>
+      <name value="EE MPI SocialHistory Legal Status"/>
+      <description value="Patsiendi teovõime staatus."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-marital-status"/>
+      </reference>
+      <name value="EE MPI SocialHistory Marital Status"/>
+      <description value="Abielu või suhte liik."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-occupation"/>
+      </reference>
+      <name value="EE MPI SocialHistory Occupation"/>
+      <description value="Töötamine"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ee-mpi-socialhistory-power-of-attorney"/>
+      </reference>
+      <name value="EE MPI SocialHistory Power Of Attorney"/>
+      <description value="Hooldusõigus"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Org1"/>
+      </reference>
+      <name value="ExampleHospital"/>
+      <description value="Example of organization Org1"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-generate-mrn"/>
+      </reference>
+      <name value="Generate Medical Record Number"/>
+      <description value="Generate the new unique Medical Record Number may be used for unknown/anonymous patient's identification."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/guardian-status"/>
+      </reference>
+      <name value="Guardian Status"/>
+      <description value="Eeskostja liik"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/IncapacityForWork"/>
+      </reference>
+      <name value="IncapacityForWork"/>
+      <description value="Example of patient incapacity for work"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-incapacity-for-work"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/legal-status"/>
+      </reference>
+      <name value="Legal Status"/>
+      <description value="Patsiendi teovõime staatus."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/legal-status"/>
+      </reference>
+      <name value="Legal Status"/>
+      <description value="The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LegalGuardianStatus"/>
+      </reference>
+      <name value="LegalGuardianStatus"/>
+      <description value="Example of patient legal duardian"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/LegalStatus"/>
+      </reference>
+      <name value="LegalStatus"/>
+      <description value="Example of patient legal status"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/identity-system-to-oid"/>
+      </reference>
+      <name value="Mapping of Identity System to OID"/>
+      <description value="A mapping between the Identity System for person identification and ENHIS OID systems"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/person-relationship-v3-mpi"/>
+      </reference>
+      <name value="Mapping of legacy V3 person relationship to MPI"/>
+      <description value="A mapping between the legacy and new person relationships"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/person-relationship-mpi-v3"/>
+      </reference>
+      <name value="Mapping of MPI person relationship to legacy V3"/>
+      <description value="A mapping between the new and legacy person relationships"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/MaritalStatus"/>
+      </reference>
+      <name value="MaritalStatus"/>
+      <description value="Example of patient marital status"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/national-identifier-requirement"/>
+      </reference>
+      <name value="National identifier requirement"/>
+      <description value="Nimekiri riikidest mille puhul on kohustuslik lisaks isiku identifitseerivale dokumendinumbrile määrata ka isikukood"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Occupation"/>
+      </reference>
+      <name value="Occupation"/>
+      <description value="Example of patient occupation"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/occupation-type"/>
+      </reference>
+      <name value="Occupation Type"/>
+      <description value="Töötamise liik"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-disability"/>
+      </reference>
+      <name value="Patient Disability"/>
+      <description value="The patient disability from Social Insurance Board (SKA)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-education"/>
+      </reference>
+      <name value="Patient Education"/>
+      <description value="The highest education level in the Education Register."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-foreign"/>
+      </reference>
+      <name value="Patient Foreign"/>
+      <description value="The foreign operation perform complex search over patient resource."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-incapacity-for-work"/>
+      </reference>
+      <name value="Patient incapacity for work"/>
+      <description value="The observation of patient incapacity for work from Social Insurance Board (SKA)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-legal-guardian"/>
+      </reference>
+      <name value="Patient Legal Guardians"/>
+      <description value="The list of legal guardians specified in the Population Register."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-link"/>
+      </reference>
+      <name value="Patient Link"/>
+      <description value="The link operation is used to link two patient resources. One of the two patients is identified as the source and one as the target. The link with type 'replaces' created from source to destination patient, the another link with type 'replaced-byä created from destination to source patient. As result of linking the destination patient is deactivated."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-lookup"/>
+      </reference>
+      <name value="Patient Lookup"/>
+      <description value="The lookup operation looking for patient data in the external registers."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-occupation"/>
+      </reference>
+      <name value="Patient occupation"/>
+      <description value="The observation of patient occupations from Employment Register (TÖR)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-power-of-attorney"/>
+      </reference>
+      <name value="Patient power of attorneys"/>
+      <description value="The list of power of attorneys in the Population Register."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/patient-unlink"/>
+      </reference>
+      <name value="Patient Unlink"/>
+      <description value="The unlink operation is used to unlink two patient resources. One of the two patients is identified as the source and one as the target. The links between the source and destination Patients will be removed. Destination resource will be reactivated."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pat1"/>
+      </reference>
+      <name value="PatientIgorBossenko"/>
+      <description value="Patsient erinevate identifikaatoritega"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-patient-verified"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/relpat11"/>
+      </reference>
+      <name value="PatientIgorBossenkoSon"/>
+      <description value="Example of patient son"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/relpat12"/>
+      </reference>
+      <name value="PatientIgorBossenkoWife"/>
+      <description value="Example of patient wife and emergency contact"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pat2"/>
+      </reference>
+      <name value="PatientJohnDoe"/>
+      <description value="Foreigner with minimal dataset."/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pat-newborn"/>
+      </reference>
+      <name value="PatientNewborn"/>
+      <description value="Example of newborn patient"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pat-stillborn"/>
+      </reference>
+      <name value="PatientStillborn"/>
+      <description value="Example of stillborn patient"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/pat-unk"/>
+      </reference>
+      <name value="PatientUnknown"/>
+      <description value="Example of unknown patient"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/person-relationship-class"/>
+      </reference>
+      <name value="Person Relationship Class"/>
+      <description value="Person relationship class"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PowerOfAttorney"/>
+      </reference>
+      <name value="PowerOfAttorney"/>
+      <description value="Example of patient attorney"/>
+      <isExample value="true"/>
+      <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/power-of-attorney"/>
+      </reference>
+      <name value="PowerOfAttorney Status"/>
+      <description value="Hooldusõiguse liik"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/power-of-attorney"/>
+      </reference>
+      <name value="PowerOfAttorney Status"/>
+      <description value="Hooldusõiguse liik"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/occupation-type"/>
+      </reference>
+      <name value="Type of employment"/>
+      <isExample value="false"/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Sissejuhatus"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="patient.html"/>
+        <name value="patient.html"/>
+        <title value="Patsiendid"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="identifiers.html"/>
+        <name value="identifiers.html"/>
+        <title value="Identifikaatorid"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="dev.html"/>
+        <name value="dev.html"/>
+        <title value="Juhend arendajale"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="link.html"/>
+        <name value="link.html"/>
+        <title value="Patsientide sidumine ja lahti sidumine"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="errors.html"/>
+        <name value="errors.html"/>
+        <title value="Vead"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="operations.html"/>
+        <name value="operations.html"/>
+        <title value="Toetavad operatsioonid"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="checklist.html"/>
+        <name value="checklist.html"/>
+        <title value="Checklist"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="contact.html"/>
+        <name value="contact.html"/>
+        <title value="Contact Us"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="download.html"/>
+        <name value="download.html"/>
+        <title value="Download"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="uc.html"/>
+        <name value="uc.html"/>
+        <title value="Kasutusjuhud"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="checks.html"/>
+        <name value="checks.html"/>
+        <title value="Kontrollid"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="hl7v3.html"/>
+        <name value="hl7v3.html"/>
+        <title value="Seos HL7 V3-ga ja CDA-ga"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2023+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="ballot"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="https://fhir.ee/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

@@ -1,0 +1,71 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "patient-power-of-attorney",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Patient/$power-of-attorney</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/references.html#Reference\">Reference</a> (<a href=\"http://hl7.org/fhir/R5/patient.html\" title=\"http://hl7.org/fhir/StructureDefinition/Patient\">Patient</a>)</td><td/><td><div><p>A direct resource reference to the patient resource.</p>\n</div></td></tr><tr><td>IN</td><td>nocache</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Specifies when the operation should ignore the value stored in the cache and should re-request data from the source. By default <em>false</em>.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Returns Bundle (with type 'collection') with Observation instances.</p>\n</div></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "https://fhir.ee/OperationDefinition/patient-power-of-attorney",
+  "version" : "1.0.0",
+  "name" : "EEMPIPatientPowerOfAttorneyStatus",
+  "title" : "Patient power of attorneys",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2023-03-26T15:21:02+11:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "The list of power of attorneys in the Population Register.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "affectsState" : false,
+  "code" : "power-of-attorney",
+  "resource" : ["Patient"],
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "patient",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "A direct resource reference to the patient resource.",
+    "type" : "Reference",
+    "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+  },
+  {
+    "name" : "nocache",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Specifies when the operation should ignore the value stored in the cache and should re-request data from the source. By default *false*.",
+    "type" : "boolean"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Returns Bundle (with type 'collection') with Observation instances.",
+    "type" : "Bundle"
+  }]
+}

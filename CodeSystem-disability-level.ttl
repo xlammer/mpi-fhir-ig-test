@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/CodeSystem/disability-level> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "disability-level"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/disability-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">keskmine<a name=\"disability-level-keskmine\"> </a></td><td>Keskmine puue</td><td>KESKMINE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">raske<a name=\"disability-level-raske\"> </a></td><td>Raske puue</td><td>RASKE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">sygav<a name=\"disability-level-sygav\"> </a></td><td>Sügav puue</td><td>SYGAV_PUUE</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/CodeSystem/disability-level"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEMPIDisabilityLevel"] ; # 
+  fhir:title [ fhir:v "Disability level"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-20T13:23:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Puude raskusaste"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "keskmine" ] ;
+     fhir:display [ fhir:v "Keskmine puue" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "et" ] ;
+       fhir:value [ fhir:v "KESKMINE_PUUE" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "raske" ] ;
+     fhir:display [ fhir:v "Raske puue" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "et" ] ;
+       fhir:value [ fhir:v "RASKE_PUUE" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sygav" ] ;
+     fhir:display [ fhir:v "Sügav puue" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "et" ] ;
+       fhir:value [ fhir:v "SYGAV_PUUE" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

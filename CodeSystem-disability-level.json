@@ -1,0 +1,58 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "disability-level",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/disability-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">keskmine<a name=\"disability-level-keskmine\"> </a></td><td>Keskmine puue</td><td>KESKMINE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">raske<a name=\"disability-level-raske\"> </a></td><td>Raske puue</td><td>RASKE_PUUE</td></tr><tr><td style=\"white-space:nowrap\">sygav<a name=\"disability-level-sygav\"> </a></td><td>Sügav puue</td><td>SYGAV_PUUE</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/CodeSystem/disability-level",
+  "version" : "1.0.0",
+  "name" : "EEMPIDisabilityLevel",
+  "title" : "Disability level",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-06-20T13:23:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "Puude raskusaste",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "keskmine",
+    "display" : "Keskmine puue",
+    "designation" : [{
+      "language" : "et",
+      "value" : "KESKMINE_PUUE"
+    }]
+  },
+  {
+    "code" : "raske",
+    "display" : "Raske puue",
+    "designation" : [{
+      "language" : "et",
+      "value" : "RASKE_PUUE"
+    }]
+  },
+  {
+    "code" : "sygav",
+    "display" : "Sügav puue",
+    "designation" : [{
+      "language" : "et",
+      "value" : "SYGAV_PUUE"
+    }]
+  }]
+}

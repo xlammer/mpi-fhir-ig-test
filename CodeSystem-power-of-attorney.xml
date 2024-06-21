@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="power-of-attorney"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/power-of-attorney</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">H9<a name="power-of-attorney-H9"> </a></td><td>Lapse eraldamine vanemast</td></tr><tr><td style="white-space:nowrap">H11<a name="power-of-attorney-H11"> </a></td><td>Osaline isikuhooldusõigus</td></tr><tr><td style="white-space:nowrap">H21<a name="power-of-attorney-H21"> </a></td><td>Osaline varahooldusõigus</td></tr><tr><td style="white-space:nowrap">H12<a name="power-of-attorney-H12"> </a></td><td>Piiratud isikuhooldusõigus</td></tr><tr><td style="white-space:nowrap">H22<a name="power-of-attorney-H22"> </a></td><td>Piiratud varahooldusõigus</td></tr><tr><td style="white-space:nowrap">H10<a name="power-of-attorney-H10"> </a></td><td>Täielik isikuhooldusõigus</td></tr><tr><td style="white-space:nowrap">H20<a name="power-of-attorney-H20"> </a></td><td>Täielik varahooldusõigus</td></tr><tr><td style="white-space:nowrap">H19<a name="power-of-attorney-H19"> </a></td><td>Vanema õigused</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/power-of-attorney"/>
+  <version value="1.0.0"/>
+  <name value="EEMPIPowerOfAttorney"/>
+  <title value="PowerOfAttorney Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="Hooldusõiguse liik"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="H9"/>
+    <display value="Lapse eraldamine vanemast"/>
+  </concept>
+  <concept>
+    <code value="H11"/>
+    <display value="Osaline isikuhooldusõigus"/>
+  </concept>
+  <concept>
+    <code value="H21"/>
+    <display value="Osaline varahooldusõigus"/>
+  </concept>
+  <concept>
+    <code value="H12"/>
+    <display value="Piiratud isikuhooldusõigus"/>
+  </concept>
+  <concept>
+    <code value="H22"/>
+    <display value="Piiratud varahooldusõigus"/>
+  </concept>
+  <concept>
+    <code value="H10"/>
+    <display value="Täielik isikuhooldusõigus"/>
+  </concept>
+  <concept>
+    <code value="H20"/>
+    <display value="Täielik varahooldusõigus"/>
+  </concept>
+  <concept>
+    <code value="H19"/>
+    <display value="Vanema õigused"/>
+  </concept>
+</CodeSystem>

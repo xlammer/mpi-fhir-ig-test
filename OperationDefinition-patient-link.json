@@ -1,0 +1,88 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "patient-link",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Patient/$link</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>source-patient</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/references.html#Reference\">Reference</a> (<a href=\"http://hl7.org/fhir/R5/patient.html\" title=\"http://hl7.org/fhir/StructureDefinition/Patient\">Patient</a>)</td><td/><td><div><p>A direct resource reference to the <strong>source</strong> patient resource (this may include an identifier).</p>\n</div></td></tr><tr><td>IN</td><td>source-patient-identifier</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>When source-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the source patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user.</p>\n</div></td></tr><tr><td>IN</td><td>target-patient</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/references.html#Reference\">Reference</a> (<a href=\"http://hl7.org/fhir/R5/patient.html\" title=\"http://hl7.org/fhir/StructureDefinition/Patient\">Patient</a>)</td><td/><td><div><p>A direct resource reference to the <strong>target</strong> patient resource.</p>\n<p>This is the surviving patient resource, the target for the link.</p>\n</div></td></tr><tr><td>IN</td><td>target-patient-identifier</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>When target-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the target patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user.</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/patient.html\">Patient</a></td><td/><td><div><p>The status of the response will be one of:</p>\n<ul>\n<li>200 OK - If the merge request doesn't expect any issues (although warning may be present) for a preview, or was completed without issues if not a preview</li>\n<li>202 Accepted - The merge request has been accepted and does not expect any issues and will continue processing the merge in the background, and you can monitor the Task for completion</li>\n<li>400 Bad Request - There are errors in the input parameters that need to corrected</li>\n<li>422 Unprocessable Entity - Business rules prevent this merge from completing</li>\n</ul>\n<p>The Parameters resource will include:</p>\n<ul>\n<li>The Input parameters to the operation</li>\n<li>An OperationOutcome containing errors, warnings, and information messages</li>\n<li>The resulting merged Patient resource (or a patient reference if the patient is not committed)</li>\n<li>Optionally a Task resource to track any additional processing that was required.</li>\n</ul>\n</div></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 1
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use"
+  }],
+  "url" : "https://fhir.ee/OperationDefinition/patient-link",
+  "version" : "1.0.0",
+  "name" : "EEMPIPatientLink",
+  "title" : "Patient Link",
+  "status" : "active",
+  "kind" : "operation",
+  "experimental" : false,
+  "date" : "2023-03-26T15:21:02+11:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "The link operation is used to link two patient resources. One of the two patients is identified as the source and one as the target. The link with type 'replaces' created from source to destination patient, the another link with type 'replaced-byä created from destination to source patient. As result of linking the destination patient is deactivated.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "affectsState" : true,
+  "code" : "link",
+  "resource" : ["Patient"],
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "source-patient",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "A direct resource reference to the **source** patient resource (this may include an identifier).",
+    "type" : "Reference",
+    "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+  },
+  {
+    "name" : "source-patient-identifier",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "When source-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the source patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user.",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "target-patient",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "A direct resource reference to the **target** patient resource.\r\rThis is the surviving patient resource, the target for the link.",
+    "type" : "Reference",
+    "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+  },
+  {
+    "name" : "target-patient-identifier",
+    "use" : "in",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "When target-patient-identifiers are provided, the server is expected to perform an internal lookup to identify the target patient record. The server SHALL reject the request if the provided identifiers do not resolve to a single patient record. This resolution MAY occur asynchronously, for example, as part of a review by a user.",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "The status of the response will be one of:\r\r* 200 OK - If the merge request doesn't expect any issues (although warning may be present) for a preview, or was completed without issues if not a preview\r* 202 Accepted - The merge request has been accepted and does not expect any issues and will continue processing the merge in the background, and you can monitor the Task for completion\r* 400 Bad Request - There are errors in the input parameters that need to corrected\r* 422 Unprocessable Entity - Business rules prevent this merge from completing\r\rThe Parameters resource will include:\r\r* The Input parameters to the operation\r* An OperationOutcome containing errors, warnings, and information messages\r* The resulting merged Patient resource (or a patient reference if the patient is not committed)\r* Optionally a Task resource to track any additional processing that was required.",
+    "type" : "Patient"
+  }]
+}

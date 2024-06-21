@@ -1,0 +1,158 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "education-level",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/education-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">A0<a name=\"education-level-A0\"> </a></td><td>Less than primary education</td><td>Hariduseta, alusharidus</td><td>Hariduseta, alusharidus</td></tr><tr><td style=\"white-space:nowrap\">A1<a name=\"education-level-A1\"> </a></td><td>Primary education</td><td>Algharidus, praegune põhikooli 6 klassi, põhihariduse nõudeta kutseharidus</td><td>Algharidus, praegune põhikooli 6 klassi, põhihariduse nõudeta kutseharidus</td></tr><tr><td style=\"white-space:nowrap\">A24<a name=\"education-level-A24\"> </a></td><td>Lower secondary general education</td><td>Põhiharidus</td><td>Põhiharidus</td></tr><tr><td style=\"white-space:nowrap\">A25<a name=\"education-level-A25\"> </a></td><td>Lower secondary vocational education</td><td>Kutseharidus koos põhihariduse omandamisega ja kutseharidus põhihariduse baasil</td><td>Kutseharidus koos põhihariduse omandamisega ja kutseharidus põhihariduse baasil</td></tr><tr><td style=\"white-space:nowrap\">A34<a name=\"education-level-A34\"> </a></td><td>Upper secondary general education</td><td>Üldkeskharidus</td><td>Üldkeskharidus</td></tr><tr><td style=\"white-space:nowrap\">A35<a name=\"education-level-A35\"> </a></td><td>Upper secondary vocational education</td><td>Kutsekeskharidus</td><td>Kutsekeskharidus</td></tr><tr><td style=\"white-space:nowrap\">A4<a name=\"education-level-A4\"> </a></td><td>Post-secondary non-tertiary vocational education</td><td>Kutseharidus keskhariduse baasil</td><td>Kutseharidus keskhariduse baasil</td></tr><tr><td style=\"white-space:nowrap\">A5<a name=\"education-level-A5\"> </a></td><td>Short-cycle tertiary education</td><td>Keskeriharidus keskhariduse baasil</td><td>Keskeriharidus keskhariduse baasil</td></tr><tr><td style=\"white-space:nowrap\">A6<a name=\"education-level-A6\"> </a></td><td>Bachelor's or equivalent level education level</td><td>Bakalaureus või sellega võrdsustatud, rakenduskõrgharidus</td><td>Bakalaureus või sellega võrdsustatud, rakenduskõrgharidus</td></tr><tr><td style=\"white-space:nowrap\">A7<a name=\"education-level-A7\"> </a></td><td>Master's or equivalent level</td><td>Magister või sellega võrdsustatud</td><td>Magister või sellega võrdsustatud</td></tr><tr><td style=\"white-space:nowrap\">A8<a name=\"education-level-A8\"> </a></td><td>Doctoral or equivalent level</td><td>Doktor või sellega võrdsustatud</td><td>Doktor või sellega võrdsustatud</td></tr><tr><td style=\"white-space:nowrap\">A9<a name=\"education-level-A9\"> </a></td><td>Not elsewhere classified</td><td>Mujal nimetama</td><td>Mujal nimetama</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/CodeSystem/education-level",
+  "version" : "1.0.0",
+  "name" : "EEMPIEducationLevel",
+  "title" : "Education level",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-06-20T13:23:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "Omandatud kõrgeim haridustase",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 12,
+  "concept" : [{
+    "code" : "A0",
+    "display" : "Less than primary education",
+    "definition" : "Hariduseta, alusharidus",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Hariduseta, alusharidus"
+    }]
+  },
+  {
+    "code" : "A1",
+    "display" : "Primary education",
+    "definition" : "Algharidus, praegune põhikooli 6 klassi, põhihariduse nõudeta kutseharidus",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Algharidus, praegune põhikooli 6 klassi, põhihariduse nõudeta kutseharidus"
+    },
+    {
+      "language" : "et",
+      "value" : "Algharidus"
+    }]
+  },
+  {
+    "code" : "A24",
+    "display" : "Lower secondary general education",
+    "definition" : "Põhiharidus",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Põhiharidus"
+    }]
+  },
+  {
+    "code" : "A25",
+    "display" : "Lower secondary vocational education",
+    "definition" : "Kutseharidus koos põhihariduse omandamisega ja kutseharidus põhihariduse baasil",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Kutseharidus koos põhihariduse omandamisega ja kutseharidus põhihariduse baasil"
+    },
+    {
+      "language" : "et",
+      "value" : "Kutsehariduse omandamine koos põhihariduse omandamisega"
+    }]
+  },
+  {
+    "code" : "A34",
+    "display" : "Upper secondary general education",
+    "definition" : "Üldkeskharidus",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Üldkeskharidus"
+    }]
+  },
+  {
+    "code" : "A35",
+    "display" : "Upper secondary vocational education",
+    "definition" : "Kutsekeskharidus",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Kutsekeskharidus"
+    }]
+  },
+  {
+    "code" : "A4",
+    "display" : "Post-secondary non-tertiary vocational education",
+    "definition" : "Kutseharidus keskhariduse baasil",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Kutseharidus keskhariduse baasil"
+    }]
+  },
+  {
+    "code" : "A5",
+    "display" : "Short-cycle tertiary education",
+    "definition" : "Keskeriharidus keskhariduse baasil",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Keskeriharidus keskhariduse baasil"
+    }]
+  },
+  {
+    "code" : "A6",
+    "display" : "Bachelor's or equivalent level education level",
+    "definition" : "Bakalaureus või sellega võrdsustatud, rakenduskõrgharidus",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Bakalaureus või sellega võrdsustatud, rakenduskõrgharidus"
+    }]
+  },
+  {
+    "code" : "A7",
+    "display" : "Master's or equivalent level",
+    "definition" : "Magister või sellega võrdsustatud",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Magister või sellega võrdsustatud"
+    },
+    {
+      "language" : "et",
+      "value" : "Magister või sellega võrdsustatud haridus"
+    }]
+  },
+  {
+    "code" : "A8",
+    "display" : "Doctoral or equivalent level",
+    "definition" : "Doktor või sellega võrdsustatud",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Doktor või sellega võrdsustatud"
+    },
+    {
+      "language" : "et",
+      "value" : "Doktor või sellega võrdsustatud haridus"
+    }]
+  },
+  {
+    "code" : "A9",
+    "display" : "Not elsewhere classified",
+    "definition" : "Mujal nimetama",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Mujal nimetama"
+    }]
+  }]
+}

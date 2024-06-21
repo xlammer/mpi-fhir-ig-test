@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PowerOfAttorney"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="PowerOfAttorney"> </a><a name="hcPowerOfAttorney"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;PowerOfAttorney&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-mpi-socialhistory-power-of-attorney.html">EE MPI SocialHistory Power Of Attorney</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social history <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Power of attorney observable <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#186063005)</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: <a name="hcrp"> </a></p><blockquote><p/><p><a name="rp"> </a></p><p><a name="hcrp"> </a></p><p><b>identifier</b>: <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html" title="The personal national identification code of Estonian citizens and residents.">Estonian Personal National Identification Code</a>/48501212711</p><p><b>patient</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>name</b>: Anti Tamm </p></blockquote><p><b>value</b>: Täielik isikuhooldusõigus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-power-of-attorney.html">PowerOfAttorney Status</a>#H10)</span></p><hr/><blockquote><p><b>Generated Narrative: RelatedPerson  #rp</b><a name="rp"> </a><a name="hcrp"> </a></p><p><b>identifier</b>: <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html" title="The personal national identification code of Estonian citizens and residents.">Estonian Personal National Identification Code</a>/48501212711</p><p><b>patient</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>name</b>: Anti Tamm </p></blockquote></div>
+  </text>
+  <contained>
+    <RelatedPerson>
+      <id value="rp"/>
+      <identifier>
+        <system value="https://fhir.ee/sid/pid/est/ni"/>
+        <value value="48501212711"/>
+      </identifier>
+      <patient>
+        <reference value="Patient/pat1"/>
+      </patient>
+      <name>
+        <family value="Tamm"/>
+        <given value="Anti"/>
+      </name>
+    </RelatedPerson>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="186063005"/>
+      <display value="Power of attorney observable"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2021-11-23"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="#rp"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/power-of-attorney"/>
+      <code value="H10"/>
+      <display value="Täielik isikuhooldusõigus"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

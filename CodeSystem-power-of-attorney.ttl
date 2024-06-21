@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/CodeSystem/power-of-attorney> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "power-of-attorney"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/power-of-attorney</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">H9<a name=\"power-of-attorney-H9\"> </a></td><td>Lapse eraldamine vanemast</td></tr><tr><td style=\"white-space:nowrap\">H11<a name=\"power-of-attorney-H11\"> </a></td><td>Osaline isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H21<a name=\"power-of-attorney-H21\"> </a></td><td>Osaline varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H12<a name=\"power-of-attorney-H12\"> </a></td><td>Piiratud isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H22<a name=\"power-of-attorney-H22\"> </a></td><td>Piiratud varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H10<a name=\"power-of-attorney-H10\"> </a></td><td>Täielik isikuhooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H20<a name=\"power-of-attorney-H20\"> </a></td><td>Täielik varahooldusõigus</td></tr><tr><td style=\"white-space:nowrap\">H19<a name=\"power-of-attorney-H19\"> </a></td><td>Vanema õigused</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/CodeSystem/power-of-attorney"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEMPIPowerOfAttorney"] ; # 
+  fhir:title [ fhir:v "PowerOfAttorney Status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-20T13:23:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Hooldusõiguse liik"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "H9" ] ;
+     fhir:display [ fhir:v "Lapse eraldamine vanemast" ]
+  ] [
+     fhir:code [ fhir:v "H11" ] ;
+     fhir:display [ fhir:v "Osaline isikuhooldusõigus" ]
+  ] [
+     fhir:code [ fhir:v "H21" ] ;
+     fhir:display [ fhir:v "Osaline varahooldusõigus" ]
+  ] [
+     fhir:code [ fhir:v "H12" ] ;
+     fhir:display [ fhir:v "Piiratud isikuhooldusõigus" ]
+  ] [
+     fhir:code [ fhir:v "H22" ] ;
+     fhir:display [ fhir:v "Piiratud varahooldusõigus" ]
+  ] [
+     fhir:code [ fhir:v "H10" ] ;
+     fhir:display [ fhir:v "Täielik isikuhooldusõigus" ]
+  ] [
+     fhir:code [ fhir:v "H20" ] ;
+     fhir:display [ fhir:v "Täielik varahooldusõigus" ]
+  ] [
+     fhir:code [ fhir:v "H19" ] ;
+     fhir:display [ fhir:v "Vanema õigused" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

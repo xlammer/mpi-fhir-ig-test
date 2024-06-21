@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="EducationLevel"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="EducationLevel"> </a><a name="hcEducationLevel"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;EducationLevel&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-mpi-socialhistory-education-level.html">EE MPI SocialHistory Education Level</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social history <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Highest level of education <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#82589-3; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#105421008)</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>issued</b>: Jun 20, 1995, 10:00:00 PM</p><p><b>value</b>: Bachelor's or equivalent level education level <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-education-level.html">Education level</a>#A6)</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82589-3"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="105421008"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <issued value="1995-06-21T00:00:00+02:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://fhir.ee/CodeSystem/education-level"/>
+      <code value="A6"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

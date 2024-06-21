@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Vead - Patsientide üldandmete teenus / Master Patient Index v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.mpi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<script type="application/javascript" src="assets/js/mermaid.js"></script>
+<script type="application/javascript" src="assets/js/drawio.js"></script>
+<script type="application/javascript" src="assets/js/plantuml.js"></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Patsientide üldandmete teenus / Master Patient Index</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Esileht</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Juhendid
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="patient.html">Patsiendid</a>
+      </li>
+      <li>
+        <a href="identifiers.html">Identifikaatorid</a>
+      </li>
+      <li>
+        <a href="dev.html">Juhend arendajale</a>
+      </li>
+      <li>
+        <a href="link.html">Patsientide sidumine ja lahti sidumine</a>
+      </li>
+      <li>
+        <a href="operations.html">Operatsioonid</a>
+      </li>
+      <li>
+        <a href="uc.html">Kasutusjuhud</a>
+      </li>
+      <li>
+        <a href="checks.html">Kontrollid ja terminoloogia</a>
+      </li>
+      <li>
+        <a href="hl7v3.html">Seos HL7 V3-ga ja CDA-ga</a>
+      </li>
+      <li>
+        <a href="checklist.html">Eeldused liidestujale</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefaktid</a>
+  </li>
+  <li>
+    <a href="toc.html">Sisukord</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Muu
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Kontaktid</a>
+      </li>
+      <li>
+        <a href="download.html">Allalaadimised</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Vead</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patsientide üldandmete teenus / Master Patient Index - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Vead</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#vead" id="markdown-toc-vead">Vead</a></li>
+  <li><a href="#veasüsteemid" id="markdown-toc-veasüsteemid">Veasüsteemid</a></li>
+  <li><a href="#vigade-kataloog" id="markdown-toc-vigade-kataloog">Vigade kataloog</a>    <ul>
+      <li><a href="#patsiendi-registri-veakoodid" id="markdown-toc-patsiendi-registri-veakoodid">Patsiendi registri veakoodid</a></li>
+      <li><a href="#tehiku-rr-x-tee-mikroteenuse-veakoodid" id="markdown-toc-tehiku-rr-x-tee-mikroteenuse-veakoodid">Tehiku RR x-tee mikroteenuse veakoodid</a></li>
+      <li><a href="#tehiku-ads-x-tee-mikroteenuse-veakoodid" id="markdown-toc-tehiku-ads-x-tee-mikroteenuse-veakoodid">Tehiku ADS x-tee mikroteenuse veakoodid</a></li>
+      <li><a href="#tehiku-tör-x-tee-mikroteenuse-veakoodid" id="markdown-toc-tehiku-tör-x-tee-mikroteenuse-veakoodid">Tehiku TÖR x-tee mikroteenuse veakoodid</a></li>
+      <li><a href="#tehiku-ska-x-tee-mikroteenuse-veakoodid" id="markdown-toc-tehiku-ska-x-tee-mikroteenuse-veakoodid">Tehiku SKA x-tee mikroteenuse veakoodid</a></li>
+      <li><a href="#tehiku-tk-x-tee-mikroteenuse-veakoodid" id="markdown-toc-tehiku-tk-x-tee-mikroteenuse-veakoodid">Tehiku TK x-tee mikroteenuse veakoodid</a></li>
+      <li><a href="#rahvastikuregistri-x-tee-teenuste-veakoodid" id="markdown-toc-rahvastikuregistri-x-tee-teenuste-veakoodid">Rahvastikuregistri x-tee teenuste veakoodid</a></li>
+      <li><a href="#tolli-ja-maksuameti-tör-registri-x-tee-teenuste-veakoodid" id="markdown-toc-tolli-ja-maksuameti-tör-registri-x-tee-teenuste-veakoodid">Tolli ja maksuameti TÖR registri x-tee teenuste veakoodid</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="vead">Vead</h2>
+
+<p>API tagastab vead <a href="https://hl7.org/fhir/R5/operationoutcome.html">OperationOutcome</a> ressursina mille sees võib olla mitu <code class="language-plaintext highlighter-rouge">issue</code> elementi koos vigadega.
+Vead võivad olla kas ainult patsiendi registri omad või sisaldada ka peegeldatud vead teistest teenustest.</p>
+
+<p>Näide <code class="language-plaintext highlighter-rouge">OperationOutcome</code>-ist, mis kuvab peegeldatud vead:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"exception"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://mpi.tehik.ee"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MPI-029"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Integratsiooniviga xroad-rr teenusega"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"exception"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://xroad-rr.tehik.ee"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XRR200"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"X-road error 10001 from RR: Isikukoodi pikkus ei ole 11 sümbolit."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"exception"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rahvastikuregister.ee"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10001"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Isikukoodi pikkus ei ole 11 sümbolit."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="veasüsteemid">Veasüsteemid</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Kirjeldus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>https://mpi.tehik.ee</td>
+      <td>Patsiendi registri veakoodid</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>https://xroad-rr.tehik.ee</td>
+      <td>Tehiku RR x-tee mikroteenuse veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://xroad-ads.tehik.ee</td>
+      <td>Tehiku ADS x-tee mikroteenuse veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://xroad-tor.tehik.ee</td>
+      <td>Tehiku TÖR x-tee mikroteenuse veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://xroad-ska.tehik.ee</td>
+      <td>Tehiku SKA x-tee mikroteenuse veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://xroad-tk.tehik.ee</td>
+      <td>Tehiku TK x-tee mikroteenuse veakoodid</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>https://rahvastikuregister.ee</td>
+      <td>Rahvastikuregistri x-tee teenuste veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://tootukassa.ee</td>
+      <td>Töötukassa x-tee teenuste veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://sotsiaalkindlustusamet.ee</td>
+      <td>Sotsiaalkindlustusameti x-tee teenuste veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://maaamet.ee</td>
+      <td>Maameti ADS registri x-tee teenuste veakoodid</td>
+    </tr>
+    <tr>
+      <td>https://emta.ee</td>
+      <td>Tolli ja maksuameti TÖR registri x-tee teenuste veakoodid</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="vigade-kataloog">Vigade kataloog</h2>
+
+<p>Allpool on toodud veakoodid tektsidega erinevatest süsteemides. Oluline meeles pidada, et mitte kõik veakoodid võivad lõppkasutajani jõuda.</p>
+
+<h3 id="patsiendi-registri-veakoodid">Patsiendi registri veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MPI-001</td>
+      <td>Juhtus MPI sisemine viga</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-002</td>
+      <td>Patsiendi indeksi krüpteerimise viga</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-003</td>
+      <td>Patsiendi indeksi dekrüpteerimise viga</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-004</td>
+      <td>Patsiendi indeksi HMAC arvutamise viga</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-005</td>
+      <td>Sekundaarne HSM võti on kohustuslik selleks, et andmeid saaks uuesti krüpteerida</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-006</td>
+      <td>Patsiendi indeks on ebakonsistentne, on leitud duplikaate {system, value} paariga</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-007</td>
+      <td>XML’i parsimine on ebaõnnestunud</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-008</td>
+      <td>Tundmatu telekomi süsteem: ${system}, lubatud väärtused: ${allowed}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-009</td>
+      <td>Tundmatu riigi kood ${code}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-010</td>
+      <td>Patsiendi loomine ei ole võimalik, patsient sama identifikaatoriga juba eksisteerib</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-011</td>
+      <td>Lubamatu aadressi tüüp: ${type}, lubatud väärtused: ${allowed}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-012</td>
+      <td>Lubamatu aadressi kasutus: ${use}, lubatud väärtused: ${allowed}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-013</td>
+      <td>Tundmatu telekomi kasutus: ${use}, lubatud väärtused: ${allowed}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-015</td>
+      <td>Antud otsingu parameetrid ei sobi või puuduvad</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-016</td>
+      <td>Patsiendil peab olema vähemalt üks identifikaator</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-017</td>
+      <td>Antud identifikaatoritega leiab mitu erinevat patsienti, salvestamine ei ole võimalik</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-018</td>
+      <td>Tundmatu patsiendi kontaktisiku liik ${code}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-019</td>
+      <td>Aadressil puudub riigi kood</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-020</td>
+      <td>Patsiendi puuete info pärimine ebaõnnestus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-021</td>
+      <td>Patsienti ei leitud</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-022</td>
+      <td>Patsiendi isikukoodi ei leitud</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-023</td>
+      <td>FHIR profiil ${profile} ei ole lubatud</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-024</td>
+      <td>FHIR profiil on puudu</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-025</td>
+      <td>Tundmatu identifikaatori süsteem ${system}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-025.01</td>
+      <td>Identifikaatori süsteem ${system} ei vasta reeglitele. Peaks alustama ‘urn:oid’, ‘https:’ või ‘http:’ prefiksist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-026</td>
+      <td>Telekomi väärtus ${value} ei vasta validatsiooni reeglitele</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-027</td>
+      <td>Leitud liiga palju tulemusi, palun laiendage otsingu kriteeria</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-028</td>
+      <td>Päringus puudub autori parameeter (${param})</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-029</td>
+      <td>Integratsiooniviga xroad-rr teenusega</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-030</td>
+      <td>Integratsiooniviga xroad-sk teenusega</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-031</td>
+      <td>Integratsiooniviga xroad-ads teenusega</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-032</td>
+      <td>Päringus puudub päis ‘x-road-issue’</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-033</td>
+      <td>Päringus puudub autori asutuse registri kood</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-034</td>
+      <td>Perekonnaseisu salvestamine ei õnnestunud, patsient ja teine isik suhtes ei ole omavahel seotud</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-035</td>
+      <td>Target patient must be active</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-036</td>
+      <td>Source patient is already linked</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-037</td>
+      <td>Target patient is already active</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-038</td>
+      <td>Source and target patients are not linked directly</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-039</td>
+      <td>Failed to notify WM about patient linkage</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-040</td>
+      <td>Integratsiooniviga xroad-tor teenusega</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-041</td>
+      <td>Antud patsiendil juba eksisteerib kontaktisik sama identifikaatoriga ja seosega</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-042</td>
+      <td>Patsiendil ei saa olla rohkem kui ${max} kontaktisikut</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-043</td>
+      <td>Integratsiooniviga xroad-tk teenusega</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-044</td>
+      <td>Päringus puudub autori roll</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-045</td>
+      <td>Parameeteriga ${param} antud identifikaatori järgi ei ole patsienti leitud</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-046</td>
+      <td>Multiple patients found for parameter ${param}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-047</td>
+      <td>legal-status parameeter on kohustuslik</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-048</td>
+      <td>Lubamatu legal-status parameetri väärtus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-049</td>
+      <td>Patsiendil juba eksisteerib aadress: ${addressText}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-050</td>
+      <td>Eesti isikukoodiga Patient ressursi pole lubatud luua POST /Patient päringuga, palun kasutage /Patient/$lookup operatsiooni Rahvastikuregistri allikaga</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-051</td>
+      <td>Aadress ADR-ID-ga ${adr-id} ei ole leitud ADS-ist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-053</td>
+      <td>Aadress ADS-OID-ga ${ads-oid} ei ole leitud ADS-ist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-054</td>
+      <td>Aadress ADS-OID-ga ${ads-oid} ja ADR-ID-ga ${adr-id} ei ole leitud ADS-ist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-055</td>
+      <td>Antud aadressi ADS-OID-ga ${ads-oid} leiab mitu paralleelaadressit, oodatud ka ADR-ID väärtus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-057</td>
+      <td>Antud teksti (${text}) järgi pole võimalik otsida aadressi ADS registrist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-058</td>
+      <td>Antud teksti (${text}) järgi pole leitud ühtegi aadressi ADS registrist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-059</td>
+      <td>Antud teksti (${text}) järgi pole võimalik leida unkaalne aadress ADS registrist</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-060</td>
+      <td>Päringus puudub päis ‘x-road-userid’</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-061</td>
+      <td>Päringus puudub päis ‘x-road-id’</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-070</td>
+      <td>Dokumendi numbriga identifikaatorile ${id-system}|${id-value} on kohustulik määrata ka isikukood süsteemiga ${required}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-081</td>
+      <td>Aadressiobjektiga on seotud mitu hooneosa</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-082</td>
+      <td>Aadressil puudub tase 6 või 7</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-083</td>
+      <td>Aadressil ADS_OID väärtusega ${ads-oid} puudub tase 6 või 7</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-086</td>
+      <td>Aadressiobjektil puudub UN tunnus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-087</td>
+      <td>Aadress on tehniline</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-088</td>
+      <td>MR tüübiga aadressiobjekti kasutamine ei ole soovitatav</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-100</td>
+      <td>Unknown job type ${type}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MPI-400</td>
+      <td>FHIR serveri üldine viga</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tehiku-rr-x-tee-mikroteenuse-veakoodid">Tehiku RR x-tee mikroteenuse veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XRR100</td>
+      <td>System error</td>
+    </tr>
+    <tr>
+      <td>XRR200</td>
+      <td>X-road error  from RR:</td>
+    </tr>
+    <tr>
+      <td>XRR300</td>
+      <td>Personal code missing in RR or invalid account, original RR error:</td>
+    </tr>
+    <tr>
+      <td>XRR400</td>
+      <td>Failed to exchange person contact data with RR due to error :</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tehiku-ads-x-tee-mikroteenuse-veakoodid">Tehiku ADS x-tee mikroteenuse veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XR_ADS-001</td>
+      <td>Juhtus ADS sisemine viga</td>
+    </tr>
+    <tr>
+      <td>XR_ADS-100</td>
+      <td>Juhtus ADS teenenuse X-tee viga: ${code} - ${text}</td>
+    </tr>
+    <tr>
+      <td>XR_ADS-404</td>
+      <td>Aadressi adr-id’ga ${adrId} ei leitud ADS-ist</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tehiku-tör-x-tee-mikroteenuse-veakoodid">Tehiku TÖR x-tee mikroteenuse veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XR_TOR-001</td>
+      <td>Juhtus TOR teenuse sisemine viga</td>
+    </tr>
+    <tr>
+      <td>XR_TOR-100</td>
+      <td>Juhtus TOR teenenuse X-tee viga: ${code} - ${text}</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tehiku-ska-x-tee-mikroteenuse-veakoodid">Tehiku SKA x-tee mikroteenuse veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XSKA100</td>
+      <td>System error</td>
+    </tr>
+    <tr>
+      <td>XSKA200</td>
+      <td>X-road error  from SKA:</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tehiku-tk-x-tee-mikroteenuse-veakoodid">Tehiku TK x-tee mikroteenuse veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XTK100</td>
+      <td>System error</td>
+    </tr>
+    <tr>
+      <td>XTK200</td>
+      <td>X-road error  from TK.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rahvastikuregistri-x-tee-teenuste-veakoodid">Rahvastikuregistri x-tee teenuste veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10175</td>
+      <td>ISIK EI OLE ÜHESELT TUVASTATAV, TÄPSUSTAGE PÄRINGU TINGIMUSI</td>
+    </tr>
+    <tr>
+      <td>10027</td>
+      <td>Isik puudub RRis.</td>
+    </tr>
+    <tr>
+      <td>10035</td>
+      <td>Päringu tingimustele vastab RRis rohkem kui üks isik.</td>
+    </tr>
+    <tr>
+      <td>10001</td>
+      <td>Isikukoodi pikkus ei ole 11 sümbolit.</td>
+    </tr>
+    <tr>
+      <td>10002</td>
+      <td>Isikukoodis ei ole kõik sümbolid numbrid.</td>
+    </tr>
+    <tr>
+      <td>10003</td>
+      <td>Isikukood algab lubamatu sümboliga.</td>
+    </tr>
+    <tr>
+      <td>10004</td>
+      <td>Isikukoodis sisalduv sünnikuupäev on vigane.</td>
+    </tr>
+    <tr>
+      <td>10005</td>
+      <td>Isikukoodi kontrolljärk on vale.</td>
+    </tr>
+    <tr>
+      <td>10900</td>
+      <td>Päringutingimused on määratlemata.</td>
+    </tr>
+    <tr>
+      <td>10022</td>
+      <td>Kohustuslikud sisendparameetrid puuduvad.</td>
+    </tr>
+    <tr>
+      <td>L027</td>
+      <td>Kontrollige isiku või kirje staatust.</td>
+    </tr>
+    <tr>
+      <td>L068</td>
+      <td>Lubamatu suhte rolli liik.</td>
+    </tr>
+    <tr>
+      <td>L069</td>
+      <td>Lubamatu suhte staatus.</td>
+    </tr>
+    <tr>
+      <td>L077</td>
+      <td>Suhet RR-ist ei leitud.</td>
+    </tr>
+    <tr>
+      <td>V10580</td>
+      <td>Kasutajal pole kehtivat isikukoodi RR-is või vale masinkonto.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="tolli-ja-maksuameti-tör-registri-x-tee-teenuste-veakoodid">Tolli ja maksuameti TÖR registri x-tee teenuste veakoodid</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veakood</th>
+      <th>Veatekst</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>50</td>
+      <td>Viga päringu töötlemisel.</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Päringus puuduvad sisendandmed</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Sisendandmetes puudub päringu tüüp.</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Päringusse pole sisestatud kõiki vajaminevaid andmeid.</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Päringu tüübil “P” puudub algus või lõpukuupäev.</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Päringu tüübil AM/TM puudub muutmise algus või lõpukuupäev</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>Päringu tüübil PM puuduvad nõutud kuupäevad.</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Päringu tüüp ei ole korrektne.</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Sisendandmetes puudub isikukood.</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Isikukoodi pikkus ei sobi</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Üldine viga, andmete laadimine andmebaasist ebaõnnestus</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Üldine viga, süsteemiparameetri laadimine andmebaasist ebaõnnestus</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>Sõnumi vastus sisaldab liiga palju kirjeid.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://tehik.ee">TEHIK</a>.  Package hl7.fhir.ee.mpi#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 13:23+0000">2024-06-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

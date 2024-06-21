@@ -1,0 +1,384 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-hl7.fhir.ee.mpi.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "hl7.fhir.ee.mpi",
+      "url" : "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "CodeSystem-disability-level.json",
+      "resourceType" : "CodeSystem",
+      "id" : "disability-level",
+      "url" : "https://fhir.ee/CodeSystem/disability-level",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-education-level.json",
+      "resourceType" : "CodeSystem",
+      "id" : "education-level",
+      "url" : "https://fhir.ee/CodeSystem/education-level",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-incapacity-for-work-category.json",
+      "resourceType" : "CodeSystem",
+      "id" : "incapacity-for-work-category",
+      "url" : "https://fhir.ee/CodeSystem/incapacity-for-work-category",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-legal-status.json",
+      "resourceType" : "CodeSystem",
+      "id" : "legal-status",
+      "url" : "https://fhir.ee/CodeSystem/legal-status",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-national-identifier-requirement.json",
+      "resourceType" : "CodeSystem",
+      "id" : "national-identifier-requirement",
+      "url" : "https://fhir.ee/CodeSystem/national-identifier-requirement",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-occupation-type.json",
+      "resourceType" : "CodeSystem",
+      "id" : "occupation-type",
+      "url" : "https://fhir.ee/CodeSystem/occupation-type",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "CodeSystem-power-of-attorney.json",
+      "resourceType" : "CodeSystem",
+      "id" : "power-of-attorney",
+      "url" : "https://fhir.ee/CodeSystem/power-of-attorney",
+      "version" : "1.0.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ConceptMap-identity-system-to-oid.json",
+      "resourceType" : "ConceptMap",
+      "id" : "identity-system-to-oid",
+      "url" : "https://fhir.ee/ConceptMap/identity-system-to-oid",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ConceptMap-person-relationship-mpi-v3.json",
+      "resourceType" : "ConceptMap",
+      "id" : "person-relationship-mpi-v3",
+      "url" : "https://fhir.ee/ConceptMap/person-relationship-mpi-v3",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ConceptMap-person-relationship-v3-mpi.json",
+      "resourceType" : "ConceptMap",
+      "id" : "person-relationship-v3-mpi",
+      "url" : "https://fhir.ee/ConceptMap/person-relationship-v3-mpi",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "OperationDefinition-patient-disability.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-disability",
+      "url" : "https://fhir.ee/OperationDefinition/patient-disability",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-education.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-education",
+      "url" : "https://fhir.ee/OperationDefinition/patient-education",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-foreign.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-foreign",
+      "url" : "https://fhir.ee/OperationDefinition/patient-foreign",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-generate-mrn.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-generate-mrn",
+      "url" : "https://fhir.ee/OperationDefinition/patient-generate-mrn",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-incapacity-for-work.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-incapacity-for-work",
+      "url" : "https://fhir.ee/OperationDefinition/patient-incapacity-for-work",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-legal-guardian.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-legal-guardian",
+      "url" : "https://fhir.ee/OperationDefinition/patient-legal-guardian",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-link.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-link",
+      "url" : "https://fhir.ee/OperationDefinition/patient-link",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-lookup.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-lookup",
+      "url" : "https://fhir.ee/OperationDefinition/patient-lookup",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-occupation.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-occupation",
+      "url" : "https://fhir.ee/OperationDefinition/patient-occupation",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-power-of-attorney.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-power-of-attorney",
+      "url" : "https://fhir.ee/OperationDefinition/patient-power-of-attorney",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "OperationDefinition-patient-unlink.json",
+      "resourceType" : "OperationDefinition",
+      "id" : "patient-unlink",
+      "url" : "https://fhir.ee/OperationDefinition/patient-unlink",
+      "version" : "1.0.0",
+      "kind" : "operation",
+      "type" : "true"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-patient-newborn.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-patient-newborn",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-newborn",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-patient-stillborn.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-patient-stillborn",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-patient-unknown.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-patient-unknown",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-unknown",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-patient-verified.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-patient-verified",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient-verified",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-patient.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-patient",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-patient",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-related-person.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-related-person",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-related-person",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "RelatedPerson",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-disability.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-disability",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-disability",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-education-level.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-education-level",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-education-level",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-incapacity-for-work.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-incapacity-for-work",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-incapacity-for-work",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-legal-guardian-status",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-legal-status.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-legal-status",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-status",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-marital-status.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-marital-status",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-marital-status",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-occupation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-occupation",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-occupation",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ee-mpi-socialhistory-power-of-attorney.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ee-mpi-socialhistory-power-of-attorney",
+      "url" : "https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-power-of-attorney",
+      "version" : "1.0.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-disability-level.json",
+      "resourceType" : "ValueSet",
+      "id" : "disability-level",
+      "url" : "https://fhir.ee/ValueSet/disability-level",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-education-level.json",
+      "resourceType" : "ValueSet",
+      "id" : "education-level",
+      "url" : "https://fhir.ee/ValueSet/education-level",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-guardian-status.json",
+      "resourceType" : "ValueSet",
+      "id" : "guardian-status",
+      "url" : "https://fhir.ee/ValueSet/guardian-status",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-incapacity-for-work-category.json",
+      "resourceType" : "ValueSet",
+      "id" : "incapacity-for-work-category",
+      "url" : "https://fhir.ee/ValueSet/incapacity-for-work-category",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-legal-status.json",
+      "resourceType" : "ValueSet",
+      "id" : "legal-status",
+      "url" : "https://fhir.ee/ValueSet/legal-status",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-occupation-type.json",
+      "resourceType" : "ValueSet",
+      "id" : "occupation-type",
+      "url" : "https://fhir.ee/ValueSet/occupation-type",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-person-relationship-class.json",
+      "resourceType" : "ValueSet",
+      "id" : "person-relationship-class",
+      "url" : "https://fhir.ee/ValueSet/person-relationship-class",
+      "version" : "1.0.0"
+    },
+    {
+      "filename" : "ValueSet-power-of-attorney.json",
+      "resourceType" : "ValueSet",
+      "id" : "power-of-attorney",
+      "url" : "https://fhir.ee/ValueSet/power-of-attorney",
+      "version" : "1.0.0"
+    }
+  ]
+}

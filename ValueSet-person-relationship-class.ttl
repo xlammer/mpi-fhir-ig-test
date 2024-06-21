@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/ValueSet/person-relationship-class> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "person-relationship-class"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleClass</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Estonian (et)</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-CON\">CON</a></td><td style=\"color: #cccccc\">contact</td><td>A person or an organization (player) which provides or receives information regarding another entity (scoper). Examples; patient NOK and emergency contacts; guarantor contact; employer contact.</td><td>Kontakt</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-GUARD\">GUARD</a></td><td style=\"color: #cccccc\">guardian</td><td>Guardian of a ward</td><td>Eestkostja</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-RoleClass.html#v3-RoleClass-DEPEN\">DEPEN</a></td><td style=\"color: #cccccc\">dependent</td><td>**Description:** A role played by a person covered under a policy or program based on an association with a subscriber, which is recognized by the policy holder.<br/><br/>**Note:** The party playing the role of a dependent is not a claimant in the sense conveyed by the RoleClassCoveredParty CLAIM (claimant). However, a dependent may make a claim under a policy, e.g., a dependent under a health insurance policy may become the claimant for coverage under that policy for wellness examines or if injured and there is no liable third party. In the case of a dependent making a claim, a role type code INSCLM (insured claimant) subtypes the class to indicate that the dependent has filed a claim for services covered under the health insurance policy.<br/><br/>**Example:** The dependent has an association with the subscriber such as a financial dependency or personal relationship such as that of a spouse, or a natural or adopted child. The policy holder may be required by law to recognize certain associations or may have discretion about the associations. For example, a policy holder may dictate the criteria for the dependent status of adult children who are students, such as requiring full time enrollment, or may recognize domestic partners as dependents. Under certain circumstances, the dependent may be under the indirect authority of a responsible party acting as a surrogate for the subscriber, for example, if the subscriber is differently abled or deceased, a guardian ad Lidem or estate executor may be appointed to assume the subscriberaTMs legal standing in the relationship with the dependent.</td><td>Eestkostetav</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/ValueSet/person-relationship-class"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "EEMPIPersonRelationshipClass"] ; # 
+  fhir:title [ fhir:v "Person Relationship Class"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-06-20T13:23:32+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Person relationship class"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "CON" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "et" ] ;
+           fhir:value [ fhir:v "Kontakt" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "GUARD" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "et" ] ;
+           fhir:value [ fhir:v "Eestkostja" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "DEPEN" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "et" ] ;
+           fhir:value [ fhir:v "Eestkostetav" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

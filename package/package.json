@@ -1,0 +1,30 @@
+{
+  "name" : "hl7.fhir.ee.mpi",
+  "version" : "1.0.0",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20240620132305",
+  "license" : "CC0-1.0",
+  "canonical" : "https://fhir.ee",
+  "notForPublication" : true,
+  "url" : "file:///workdir/output",
+  "title" : "Patsientide üldandmete teenus / Master Patient Index",
+  "fhirVersions" : ["5.0.0"],
+  "dependencies" : {
+    "hl7.terminology.r5" : "5.5.0",
+    "hl7.fhir.uv.extensions" : "current",
+    "hl7.fhir.ee.base" : "current"
+  },
+  "author" : "TEHIK",
+  "maintainers" : [
+    {
+      "name" : "TEHIK",
+      "url" : "https://tehik.ee"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "urn:iso:std:iso:3166#EE"
+}

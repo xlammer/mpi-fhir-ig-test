@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Kontrollid - Patsientide üldandmete teenus / Master Patient Index v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.mpi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<script type="application/javascript" src="assets/js/mermaid.js"></script>
+<script type="application/javascript" src="assets/js/drawio.js"></script>
+<script type="application/javascript" src="assets/js/plantuml.js"></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Patsientide üldandmete teenus / Master Patient Index</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Esileht</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Juhendid
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="patient.html">Patsiendid</a>
+      </li>
+      <li>
+        <a href="identifiers.html">Identifikaatorid</a>
+      </li>
+      <li>
+        <a href="dev.html">Juhend arendajale</a>
+      </li>
+      <li>
+        <a href="link.html">Patsientide sidumine ja lahti sidumine</a>
+      </li>
+      <li>
+        <a href="operations.html">Operatsioonid</a>
+      </li>
+      <li>
+        <a href="uc.html">Kasutusjuhud</a>
+      </li>
+      <li>
+        <a href="checks.html">Kontrollid ja terminoloogia</a>
+      </li>
+      <li>
+        <a href="hl7v3.html">Seos HL7 V3-ga ja CDA-ga</a>
+      </li>
+      <li>
+        <a href="checklist.html">Eeldused liidestujale</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefaktid</a>
+  </li>
+  <li>
+    <a href="toc.html">Sisukord</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Muu
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Kontaktid</a>
+      </li>
+      <li>
+        <a href="download.html">Allalaadimised</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Kontrollid</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patsientide üldandmete teenus / Master Patient Index - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Kontrollid</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#üldised-kontrollid" id="markdown-toc-üldised-kontrollid">Üldised kontrollid</a></li>
+  <li><a href="#püt-rakenduse-sisesed-kontrollid" id="markdown-toc-püt-rakenduse-sisesed-kontrollid">PÜT rakenduse sisesed kontrollid</a></li>
+  <li><a href="#kasutatav-terminoloogia" id="markdown-toc-kasutatav-terminoloogia">Kasutatav terminoloogia</a></li>
+</ul>
+
+</div>
+<h3 id="üldised-kontrollid">Üldised kontrollid</h3>
+
+<p>Kõik päringus ja ressurssid peavad järgima FHIR spetsifikatsiooni.</p>
+
+<p>Sissetulevad päringud ja andmed valideeritakse:</p>
+
+<ul>
+  <li>FHIR <a href="http://hl7.org/fhir/documentation.html">spetsifikatsiooni</a> üldiste reeglite ja loendite vastu</li>
+  <li>PÜT profiilide vastu</li>
+  <li>PÜT rakenduse poolt lubatud tegevuste nimekirja vastu (nimekiri tegevustest leitav CapabilityStatement-is aadressil <a href="#">$mpi-url/fhir/metadata</a>)</li>
+  <li>Kontrollitakse kasutatavat terminoloogiat profiilide ja terminoloogia serveri vastu</li>
+  <li>Autoriseerimisserveri vastu, tegevust saab teostada ainult kasutaja vastava rolli olemasolul</li>
+</ul>
+
+<h3 id="püt-rakenduse-sisesed-kontrollid">PÜT rakenduse sisesed kontrollid</h3>
+
+<h4 id="patsiendid">Patsiendid</h4>
+<p>Eesti isikikoodiga patsiendi loomine pole lubatud. <code class="language-plaintext highlighter-rouge">Patient</code> ressurss ei tohi loomisel sisalda identifikaatori süsteemiga https://fhir.ee/sid/pid/est/ni.
+Eesti isikukoodiga patsiendi tuleb pärida alati <a href="operations.html#eesti-isikukoodiga-patsiendi-otsing">lookup</a> operatisooniga, kus on kasutatud allikana Rahvastikuregister.
+Operatsioon tagastab <code class="language-plaintext highlighter-rouge">Patient</code> ressursi koos id-ga, mille abil saab patsiendi andmeid uuendada.</p>
+
+<h4 id="telefonid">Telefonid</h4>
+
+<p>Eesti numeratsiooniplaan <a href="https://www.riigiteataja.ee/akt/881042">riigiteataja.ee/akt/881042</a> reguleerib lubatud telefoninumbrite numeratsiooni Eestis.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Telefoninumbrid</th>
+      <th style="text-align: left">Regex valem</th>
+      <th style="text-align: left">Kirjeldus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Eesti lauatelefoni number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">^(32               | 33                                                                                                                  |35|38|39|6[0-9]|7[1-9]|88)(\d{5})$</code></td>
+      <td style="text-align: left">Eesti riigikood kujul +372 või 00372 ignoreeritakse valideerimisel, kuid salvestatakse alati kujul +372.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Eesti mobiiltelefoni number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">^5[0-9](\d{5,6})$</code></td>
+      <td style="text-align: left">Eesti riigikood kujul +372 või 00372 ignoreeritakse valideerimisel, kuid salvestatakse alati kujul +372.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Välismaa telefoni number</td>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">^\+[1-9]\d{1,14}$</code></td>
+      <td style="text-align: left">Kontrollitakse ainult pikkust ja riigi koodi olemasolu. Teiste riikide reegleid ei rakendata numbri valideerimisel.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Telefoninumbrid salvestatkse registri alati riigi koodiga kujul +XXXYYYYYY ilma tühikudeta ja sulgudeta. Juhul kui PÜT-i jõuab valiidne Eesti number ilma
+riigikoodita siis riigikood lisatakse telefoninumbrile automaatselt.</p>
+
+<h4 id="emailid">Emailid</h4>
+
+<p>Emaili valideeritakse regexi valemi järgi:
+<code class="language-plaintext highlighter-rouge">^(?=.{1,64}@)[A-Za-z0-9_+-]+(\.[A-Za-z0-9_+-]+)*@[^-][A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,})$</code>.
+Salvestatakse ainult valiidsed emailid muutumata kujul.</p>
+
+<h4 id="aadress">Aadress</h4>
+
+<p>FHIR aadress kasutatakse postikonventsioonide väljendamiseks.
+Aadressi vorming kirjeldatud <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/StructureDefinition-ee-address.html">EEBase Address</a> andmetüübi kirjelduses.
+Kohustlikuks elemendiks on riigikood, mis peab vastama <a href="http://hl7.org/fhir/R5/valueset-iso3166-1-2.html">iso3166-1-alpha2</a> vormingule.
+Tagasiühildamiseks praeguse lahendusega (ajutiselt) toetaks ka <a href="http://hl7.org/fhir/R5/valueset-iso3166-1-3.html">iso3166-1-alpha3</a> riigikood.</p>
+
+<h5 id="eesti-aadress">Eesti aadress</h5>
+<p>Eesti aadress on aadress mille riigikood on <code class="language-plaintext highlighter-rouge">EE</code> (Eesti).</p>
+
+<p>MPI-sse saab salvestada ainult isiku lisa-aadress, ametlik elukoha aadress tuleb MPI-sse automaatselt Rahvastikuregistrist automaatselt.</p>
+
+<ul>
+  <li>Eesti aadressi puhul on kohustuslik <code class="language-plaintext highlighter-rouge">ADR-ID</code> ja <code class="language-plaintext highlighter-rouge">ADS-OID</code> väärtus ADS registrist. Kõik teised väljad on informatiivsed ja ei oma sisulist tähendust. Vaata aadressi
+kasutamise <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/StructureDefinition-ee-address.html#notes">juhiseid</a> EEBase spetsifikatsioonis.</li>
+  <li>Kui <code class="language-plaintext highlighter-rouge">ADR-ID</code> olemas aga <code class="language-plaintext highlighter-rouge">ADS-OID</code> puudub siis teised aadressi väljad laetakse ADS-ist <em>ADR-ID</em> järgi.</li>
+  <li>Kui <code class="language-plaintext highlighter-rouge">ADS-OID</code> olemas aga <code class="language-plaintext highlighter-rouge">ADR-ID</code> puudub siis teised aadressi väljad laetakse ADS-ist <em>ADS-OID</em> järgi.</li>
+  <li>Kui <code class="language-plaintext highlighter-rouge">ADR-ID</code> ja <code class="language-plaintext highlighter-rouge">ADS-OID</code> puuduvad aga <code class="language-plaintext highlighter-rouge">text</code> on olemas, siis proovitakse leida unikaalne vaste ADS-ist teksti järgi.</li>
+</ul>
+
+<h6 id="kvaliteedinõuded">Kvaliteedinõuded</h6>
+
+<p>Lisa-aadress peab vastama samadele kvaliteedinõuetele, mis elukoha aaddress Rahvastikuregistri järgi.
+Aadressite edastamiseks MPI-sse tuleb järgida Maa-ameti poolt koostatud <a href="https://geoportaal.maaamet.ee/docs/aadress/RR_elukohtade-ja-lisaaadresside-valiku-juhend.pdf">juhendi</a>. 
+Kui aadress ei vasta nõuetele MPI lisab sellele <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base//StructureDefinition-ee-address-definitions.html#diff_Address.extension:notice">notice</a> veatekstiga.</p>
+
+<p><strong>Kui lisa-aadress vastab kvaliteedinõuetele, siis saadetakse see automaatselt Rahvastikuregistrisse.</strong></p>
+
+<h5 id="välismaa-aadress">Välismaa aadress</h5>
+
+<p>Välismaa aadress on aadress mille riigiks ei ole <code class="language-plaintext highlighter-rouge">EE</code> (Eesti).
+Välismaa aadressi puhul on kohustuslik ainult riigi kood ja tekst. Välismaa aadressi puhul teisi kontrolle ei teostata.</p>
+
+<h4 id="identifikaatorid">Identifikaatorid</h4>
+
+<p>Identifikaatorite eemaldamine ei ole lubatud. Kui patsiendi identifikaator kaotanud kehtivuse siis tuleb määrata kehtivuse lõppuaeg.</p>
+
+<h3 id="kasutatav-terminoloogia">Kasutatav terminoloogia</h3>
+
+<h4 id="püt-is-kasutatavad-loendid">PÜT-is kasutatavad loendid</h4>
+
+<ul>
+  <li><a href="ValueSet-incapacity-for-work-category.html">Töövõimetuse määr</a></li>
+  <li><a href="ValueSet-disability-level.html">Puude raskusaste</a></li>
+  <li><a href="ValueSet-education-level.html">Patsiendi kõrgeim haridustase</a></li>
+  <li><a href="ValueSet-guardian-status.html">Eeskostja liik</a></li>
+  <li><a href="ValueSet-legal-status.html">Patsiendi teovõime staatus</a></li>
+  <li><a href="ValueSet-occupation-type.html">Töötamise liik</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-person-relationship.html">Suhe patsiendiga</a></li>
+  <li><a href="ValueSet-person-relationship-class.html">Kontaktisiku tüüp</a></li>
+  <li><a href="ValueSet-power-of-attorney.html">Hooldusõiguse liik</a></li>
+</ul>
+
+<h4 id="püt-is-kasutatavad-klassifikaatorid">PÜT-is kasutatavad klassifikaatorid</h4>
+
+<ul>
+  <li><a href="CodeSystem-incapacity-for-work-category.html">Töövõimetuse määr</a></li>
+  <li><a href="CodeSystem-disability-level.html">Puude raskusaste</a></li>
+  <li><a href="CodeSystem-legal-status.html">Patsiendi teovõime staatus</a></li>
+  <li><a href="CodeSystem-education-level.html">Patsiendi kõrgeim haridustase</a></li>
+  <li><a href="CodeSystem-power-of-attorney.html">Hooldusõiguse liik</a></li>
+  <li><a href="CodeSystem-occupation-type.html">Töötamise liik</a></li>
+</ul>
+
+<h4 id="eebase-i-kaudu-kasutatavad-loendid">EEBase-i kaudu kasutatavad loendid</h4>
+
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-administrative-gender.html">Administrative Gender</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-patient-identifier-domain.html">Patient Identifier Domain</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-date-accuracy-indicator.html">Date Accuracy Indicator</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-ads-adr-id.html">ADS ADR-ID</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/StructureDefinition-ee-ads-oid.html">ADS OID</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-ee-observation-category.html">Observation category</a></li>
+</ul>
+
+<h4 id="kasutatav-fhir-terminoogia">Kasutatav FHIR terminoogia</h4>
+
+<ul>
+  <li><a href="http://hl7.org/fhir/R5/valueset-marital-status.html">Suhte liik/MaritalStatus</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-identifier-use.html">Identifier use</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-identifier-type.html">IdentifierTypeCodes</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-all-languages.html">AllLanguages</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-name-use.html">NameUse</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-contact-point-use.html">ContactPointUse</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-address-use.html">AddressUse</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-address-type.html">AddressType</a></li>
+  <li><a href="http://hl7.org/fhir/R5/valueset-iso3166-1-2.html">Riigid/Iso316612</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://tehik.ee">TEHIK</a>.  Package hl7.fhir.ee.mpi#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 13:23+0000">2024-06-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

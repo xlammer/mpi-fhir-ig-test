@@ -1,0 +1,9 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://fhir.ee/ValueSet/disability-level,1.0.0,draft,,EEMPIDisabilityLevel,Disability level,"Puude raskusaste",,"Internal"
+https://fhir.ee/ValueSet/education-level,1.0.0,draft,,EEMPIEducationLevel,Education Level,"Patsiendi kõrgeim haridustase",,"Internal"
+https://fhir.ee/ValueSet/guardian-status,1.0.0,draft,,EEMPIGuardianStatus,Guardian Status,"Eeskostja liik",,"SCT"
+https://fhir.ee/ValueSet/incapacity-for-work-category,1.0.0,draft,,EEMPIIncapacityForWorkCategory,Category of Incapacity For Work,"Töövõimetuse määr",,"Internal"
+https://fhir.ee/ValueSet/legal-status,1.0.0,draft,,EEMPILegalStatus,Legal Status,"Patsiendi teovõime staatus.",,"Internal"
+https://fhir.ee/ValueSet/occupation-type,1.0.0,draft,,EEMPIOccupationType,Occupation Type,"Töötamise liik",,"Internal"
+https://fhir.ee/ValueSet/person-relationship-class,1.0.0,draft,,EEMPIPersonRelationshipClass,Person Relationship Class,"Person relationship class",,"THO (V3)"
+https://fhir.ee/ValueSet/power-of-attorney,1.0.0,draft,,EEMPIPowerOfAttorney,PowerOfAttorney Status,"Hooldusõiguse liik",,"Internal"

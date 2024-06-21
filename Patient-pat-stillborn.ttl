@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/Patient/pat-stillborn> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pat-stillborn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn"^^xsd:anyURI ;
+       fhir:link <https://fhir.ee/StructureDefinition/ee-mpi-patient-stillborn>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> female, DoB: 2007-12-12 ( <code>https://fhir.ee/sid/pid/est/npi</code>/60712121111)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>false</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>2007-12-12 16:00:00+0000</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">1</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>https://fhir.ee/sid/pid/est/prn/90006399</code>/123e4567-e89b-12d3-a456-426614174000</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "60712121111" ]
+  ] [
+     fhir:system [ fhir:v "https://fhir.ee/sid/pid/est/prn/90006399"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123e4567-e89b-12d3-a456-426614174000" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [
+     fhir:v "2007-12-12"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2007-12-12T16:00:00.000Z"^^xsd:dateTime ]
+     ] )
+  ] ; # 
+  fhir:deceased [ fhir:v "2007-12-12T16:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:multipleBirth [ fhir:v "1"^^xsd:integer] . # 
+
+# -------------------------------------------------------------------------------------
+

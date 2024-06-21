@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="person-relationship-mpi-v3"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-person-relationship.html">Person Relationship</a> to urn:oid:1.3.6.1.4.1.28284.6.2.3.5</p><p>ACTIVE. Published on 2023-09-25 by TEHIK  (TEHIK: <a href="https://tehik.ee">https://tehik.ee</a>). </p><div><p>A mapping between the new and legacy person relationships</p>
+</div><br/><p><b>Group 1 </b>Mapping from <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-snomed-CT.html">SNOMED CT International Edition</a> to <code>urn:oid:1.3.6.1.4.1.28284.6.2.3.5</code></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>72705000 (Mother)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>4</td></tr><tr><td>66839005 (Father)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>5</td></tr><tr><td>67822003 (Child)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>11</td></tr><tr><td>127848009 (Spouse)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>1</td></tr><tr><td>444210007 (Cohabitee in relationship with subject)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>13</td></tr><tr><td>394863008 (Non-family member)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>16</td></tr><tr><td>125677006 (Relative)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>11</td></tr><tr><td>106328005 (Social worker)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>17</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/ConceptMap/person-relationship-mpi-v3"/>
+  <version value="1.0.0"/>
+  <name value="PersonRelationshipMPIV3"/>
+  <title value="Mapping of MPI person relationship to legacy V3"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-09-25"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="A mapping between the new and legacy person relationships"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="venue"/>
+    </code>
+    <valueCodeableConcept>
+      <text value="for NHIS usage"/>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <sourceScopeUri value="https://fhir.ee/ValueSet/person-relationship"/>
+  <targetScopeUri value="urn:oid:1.3.6.1.4.1.28284.6.2.3.5"/>
+  <group>
+    <source value="http://snomed.info/sct"/>
+    <target value="urn:oid:1.3.6.1.4.1.28284.6.2.3.5"/>
+    <element>
+      <code value="72705000"/>
+      <display value="Mother"/>
+      <target>
+        <code value="4"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="66839005"/>
+      <display value="Father"/>
+      <target>
+        <code value="5"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="67822003"/>
+      <display value="Child"/>
+      <target>
+        <code value="11"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="127848009"/>
+      <display value="Spouse"/>
+      <target>
+        <code value="1"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="444210007"/>
+      <display value="Cohabitee in relationship with subject"/>
+      <target>
+        <code value="13"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="394863008"/>
+      <display value="Non-family member"/>
+      <target>
+        <code value="16"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="125677006"/>
+      <display value="Relative"/>
+      <target>
+        <code value="11"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="106328005"/>
+      <display value="Social worker"/>
+      <target>
+        <code value="17"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

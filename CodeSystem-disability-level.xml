@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="disability-level"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/disability-level</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style="white-space:nowrap">keskmine<a name="disability-level-keskmine"> </a></td><td>Keskmine puue</td><td>KESKMINE_PUUE</td></tr><tr><td style="white-space:nowrap">raske<a name="disability-level-raske"> </a></td><td>Raske puue</td><td>RASKE_PUUE</td></tr><tr><td style="white-space:nowrap">sygav<a name="disability-level-sygav"> </a></td><td>Sügav puue</td><td>SYGAV_PUUE</td></tr></table></div>
+  </text>
+  <url value="https://fhir.ee/CodeSystem/disability-level"/>
+  <version value="1.0.0"/>
+  <name value="EEMPIDisabilityLevel"/>
+  <title value="Disability level"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-06-20T13:23:32+00:00"/>
+  <publisher value="TEHIK"/>
+  <contact>
+    <name value="TEHIK"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://tehik.ee"/>
+    </telecom>
+  </contact>
+  <description value="Puude raskusaste"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="EE"/>
+      <display value="Estonia"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="keskmine"/>
+    <display value="Keskmine puue"/>
+    <designation>
+      <language value="et"/>
+      <value value="KESKMINE_PUUE"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="raske"/>
+    <display value="Raske puue"/>
+    <designation>
+      <language value="et"/>
+      <value value="RASKE_PUUE"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="sygav"/>
+    <display value="Sügav puue"/>
+    <designation>
+      <language value="et"/>
+      <value value="SYGAV_PUUE"/>
+    </designation>
+  </concept>
+</CodeSystem>

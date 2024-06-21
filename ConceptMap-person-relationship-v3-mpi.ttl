@@ -1,0 +1,193 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.ee/ConceptMap/person-relationship-v3-mpi> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "person-relationship-v3-mpi"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from urn:oid:1.3.6.1.4.1.28284.6.2.3.5 to <a href=\"https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-person-relationship.html\">Person Relationship</a></p><p>ACTIVE. Published on 2023-09-25 by TEHIK  (TEHIK: <a href=\"https://tehik.ee\">https://tehik.ee</a>). </p><div><p>A mapping between the legacy and new person relationships</p>\n</div><br/><p><b>Group 1 </b>Mapping from <code>urn:oid:1.3.6.1.4.1.28284.6.2.3.5</code> to <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-v3-snomed-CT.html\">SNOMED CT International Edition</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1 (abikaasa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>127848009 (Spouse)</td></tr><tr><td>2 (tütar)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>67822003 (Child)</td></tr><tr><td>3 (poeg)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>67822003 (Child)</td></tr><tr><td>4 (ema)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>72705000 (Mother)</td></tr><tr><td>5 (isa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>66839005 (Father)</td></tr><tr><td>6 (õde)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>125677006 (Relative)</td></tr><tr><td>7 (vend)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>125677006 (Relative)</td></tr><tr><td>8 (vanaema)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>125677006 (Relative)</td></tr><tr><td>9 (vanaisa)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>125677006 (Relative)</td></tr><tr><td>10 (lapselaps)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>125677006 (Relative)</td></tr><tr><td>11 (muu sugulane)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>125677006 (Relative)</td></tr><tr><td>12 (eestkostja)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>394863008 (Non-family member (person))</td></tr><tr><td>13 (elukaaslane)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>444210007 (Cohabitee in relationship with subject (person))</td></tr><tr><td>14 (naaber)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>394863008 (Non-family member (person))</td></tr><tr><td>15 (töökaaslane)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>394863008 (Non-family member (person))</td></tr><tr><td>16 (tuttav)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>394863008 (Non-family member (person))</td></tr><tr><td>17 (sotsiaaltöötaja)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>106328005 (Social worker)</td></tr><tr><td>18 (kohaliku omavalitsuse esindaja)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#source-is-narrower-than-target\" title=\"source-is-narrower-than-target\">is narrower than</a></td><td>394863008 (Non-family member (person))</td></tr><tr><td>99 (muu)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>394863008 (Non-family member (person))</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.ee/ConceptMap/person-relationship-v3-mpi"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PersonRelationshipV3MPI"] ; # 
+  fhir:title [ fhir:v "Mapping of legacy V3 person relationship to MPI"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-09-25"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "TEHIK"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "TEHIK" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://tehik.ee" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A mapping between the legacy and new person relationships"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "venue" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "for NHIS usage" ]
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Estonia" ]
+     ] )
+  ] ) ; # 
+  fhir:sourceScope [ fhir:v "urn:oid:1.3.6.1.4.1.28284.6.2.3.5"^^xsd:anyURI] ; # 
+  fhir:targetScope [ fhir:v "https://fhir.ee/ValueSet/person-relationship"^^xsd:anyURI] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "urn:oid:1.3.6.1.4.1.28284.6.2.3.5"^^xsd:anyURI ] ;
+     fhir:target [
+       fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+       fhir:link <http://snomed.info/sct>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "abikaasa" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "127848009" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "tütar" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "67822003" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "poeg" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "67822003" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "ema" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "72705000" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "isa" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "66839005" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "6" ] ;
+       fhir:display [ fhir:v "õde" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "7" ] ;
+       fhir:display [ fhir:v "vend" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "vanaema" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:display [ fhir:v "vanaisa" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "10" ] ;
+       fhir:display [ fhir:v "lapselaps" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "11" ] ;
+       fhir:display [ fhir:v "muu sugulane" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "125677006" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "12" ] ;
+       fhir:display [ fhir:v "eestkostja" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "13" ] ;
+       fhir:display [ fhir:v "elukaaslane" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "444210007" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "14" ] ;
+       fhir:display [ fhir:v "naaber" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "15" ] ;
+       fhir:display [ fhir:v "töökaaslane" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "16" ] ;
+       fhir:display [ fhir:v "tuttav" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "17" ] ;
+       fhir:display [ fhir:v "sotsiaaltöötaja" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "106328005" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "18" ] ;
+       fhir:display [ fhir:v "kohaliku omavalitsuse esindaja" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:relationship [ fhir:v "source-is-narrower-than-target" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "99" ] ;
+       fhir:display [ fhir:v "muu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "394863008" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

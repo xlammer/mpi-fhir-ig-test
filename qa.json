@@ -1,0 +1,19 @@
+{
+  "url" : "https://fhir.ee/ImplementationGuide/hl7.fhir.ee.mpi",
+  "name" : "EEMPI",
+  "title" : "Patsientide üldandmete teenus / Master Patient Index",
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "hl7.fhir.ee.mpi",
+  "ig-ver" : "1.0.0",
+  "date" : "Thu, 20 Jun, 2024 13:23:32 +0000",
+  "dateISO8601" : "2024-06-20T13:23:32+00:00",
+  "errs" : 0,
+  "warnings" : 139,
+  "hints" : 89,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "5.0.0",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1449240168
+}

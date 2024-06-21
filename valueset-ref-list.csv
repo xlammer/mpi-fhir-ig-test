@@ -1,0 +1,12 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/marital-status,5.0.0,active,"2.16.840.1.113883.4.642.3.29",MaritalStatusCodes,Marital Status Codes,"This value set defines the set of codes that can be used to indicate the marital status of a person.","StructureDefinition/ee-mpi-socialhistory-marital-status","THO (V3)"
+https://fhir.ee/ValueSet/disability-level,1.0.0,draft,,EEMPIDisabilityLevel,Disability level,"Puude raskusaste","StructureDefinition/ee-mpi-socialhistory-disability","Internal"
+https://fhir.ee/ValueSet/education-level,1.0.0,draft,,EEMPIEducationLevel,Education Level,"Patsiendi kõrgeim haridustase","StructureDefinition/ee-mpi-socialhistory-education-level","Internal"
+https://fhir.ee/ValueSet/guardian-status,1.0.0,draft,,EEMPIGuardianStatus,Guardian Status,"Eeskostja liik","StructureDefinition/ee-mpi-socialhistory-legal-guardian-status","SCT"
+https://fhir.ee/ValueSet/incapacity-for-work-category,1.0.0,draft,,EEMPIIncapacityForWorkCategory,Category of Incapacity For Work,"Töövõimetuse määr","StructureDefinition/ee-mpi-socialhistory-incapacity-for-work","Internal"
+https://fhir.ee/ValueSet/legal-status,1.0.0,draft,,EEMPILegalStatus,Legal Status,"Patsiendi teovõime staatus.","StructureDefinition/ee-mpi-socialhistory-legal-status","Internal"
+https://fhir.ee/ValueSet/occupation,1.0.0,draft,,EEBaseOccupation,Occupation,"Classification of Occupations","StructureDefinition/ee-mpi-socialhistory-occupation","hl7.fhir.ee.base"
+https://fhir.ee/ValueSet/occupation-type,1.0.0,draft,,EEMPIOccupationType,Occupation Type,"Töötamise liik","StructureDefinition/ee-mpi-socialhistory-occupation","Internal"
+https://fhir.ee/ValueSet/person-relationship,1.0.0,draft,,EEBasePersonRelationship,Person Relationship,"Suhe patsiendiga","ConceptMap/person-relationship-v3-mpi,StructureDefinition/ee-mpi-related-person,ConceptMap/person-relationship-mpi-v3","SCT"
+https://fhir.ee/ValueSet/person-relationship-class,1.0.0,draft,,EEMPIPersonRelationshipClass,Person Relationship Class,"Person relationship class","StructureDefinition/ee-mpi-related-person","THO (V3)"
+https://fhir.ee/ValueSet/power-of-attorney,1.0.0,draft,,EEMPIPowerOfAttorney,PowerOfAttorney Status,"Hooldusõiguse liik","StructureDefinition/ee-mpi-socialhistory-power-of-attorney","Internal"

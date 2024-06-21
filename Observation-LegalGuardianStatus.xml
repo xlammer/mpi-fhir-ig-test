@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="LegalGuardianStatus"/>
+  <meta>
+    <profile value="https://fhir.ee/StructureDefinition/ee-mpi-socialhistory-legal-guardian-status"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation </b><a name="LegalGuardianStatus"> </a><a name="hcLegalGuardianStatus"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">ResourceObservation &quot;LegalGuardianStatus&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ee-mpi-socialhistory-legal-guardian-status.html">EE MPI SocialHistory Legal Guardian Status</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Social history <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.5.0/CodeSystem-observation-category.html">Observation Category Codes</a>#social-history)</span></p><p><b>code</b>: Legal guardian status <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#1193838006)</span></p><p><b>subject</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>effective</b>: 2021-11-23 --&gt; (ongoing)</p><p><b>performer</b>: </p><ul><li><a name="hckov"> </a></li><li><a name="hceeskostja"> </a></li></ul><blockquote><p/><p><a name="kov"> </a></p><p><a name="hckov"> </a></p><p><b>identifier</b>: <code>https://fhir.ee/sid/org/est/br</code>/75018816</p><p><b>active</b>: true</p><p><b>name</b>: Anija Vallavalitsus</p></blockquote><blockquote><p/><p><a name="eeskostja"> </a></p><p><a name="hceeskostja"> </a></p><p><b>identifier</b>: <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html" title="The personal national identification code of Estonian citizens and residents.">Estonian Personal National Identification Code</a>/48501212711</p><p><b>patient</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>name</b>: Eeskostja eesnimi Eeskostja perekonnanimi </p></blockquote><p><b>value</b>: Legal guardian <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#58626002)</span></p><hr/><blockquote><p><b>Generated Narrative: RelatedPerson  #eeskostja</b><a name="eeskostja"> </a><a name="hceeskostja"> </a></p><p><b>identifier</b>: <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/NamingSystem-pid-est-ni.html" title="The personal national identification code of Estonian citizens and residents.">Estonian Personal National Identification Code</a>/48501212711</p><p><b>patient</b>: <a href="Patient-pat1.html">Patient/pat1</a> &quot; BOSSENKO&quot;</p><p><b>name</b>: Eeskostja eesnimi Eeskostja perekonnanimi </p></blockquote><hr/><blockquote><p><b>Generated Narrative: Organization  #kov</b><a name="kov"> </a><a name="hckov"> </a></p><p><b>identifier</b>: <code>https://fhir.ee/sid/org/est/br</code>/75018816</p><p><b>active</b>: true</p><p><b>name</b>: Anija Vallavalitsus</p></blockquote></div>
+  </text>
+  <contained>
+    <RelatedPerson>
+      <id value="eeskostja"/>
+      <identifier>
+        <system value="https://fhir.ee/sid/pid/est/ni"/>
+        <value value="48501212711"/>
+      </identifier>
+      <patient>
+        <reference value="Patient/pat1"/>
+      </patient>
+      <name>
+        <family value="Eeskostja perekonnanimi"/>
+        <given value="Eeskostja eesnimi"/>
+      </name>
+    </RelatedPerson>
+  </contained>
+  <contained>
+    <Organization>
+      <id value="kov"/>
+      <identifier>
+        <system value="https://fhir.ee/sid/org/est/br"/>
+        <value value="75018816"/>
+      </identifier>
+      <active value="true"/>
+      <name value="Anija Vallavalitsus"/>
+    </Organization>
+  </contained>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+      <display value="Social history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1193838006"/>
+      <display value="Legal guardian status"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/pat1"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2021-11-23"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="#kov"/>
+  </performer>
+  <performer>
+    <reference value="#eeskostja"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="58626002"/>
+      <display value="Legal guardian"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Checklist - Patsientide üldandmete teenus / Master Patient Index v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7.fhir.ee.mpi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<script type="application/javascript" src="assets/js/mermaid.js"></script>
+<script type="application/javascript" src="assets/js/drawio.js"></script>
+<script type="application/javascript" src="assets/js/plantuml.js"></script>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Patsientide üldandmete teenus / Master Patient Index</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ballot
+
+
+
+  <img alt="Estonia flag" src="assets/images/est.svg" height="16" title="Estonia"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Esileht</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Juhendid
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="patient.html">Patsiendid</a>
+      </li>
+      <li>
+        <a href="identifiers.html">Identifikaatorid</a>
+      </li>
+      <li>
+        <a href="dev.html">Juhend arendajale</a>
+      </li>
+      <li>
+        <a href="link.html">Patsientide sidumine ja lahti sidumine</a>
+      </li>
+      <li>
+        <a href="operations.html">Operatsioonid</a>
+      </li>
+      <li>
+        <a href="uc.html">Kasutusjuhud</a>
+      </li>
+      <li>
+        <a href="checks.html">Kontrollid ja terminoloogia</a>
+      </li>
+      <li>
+        <a href="hl7v3.html">Seos HL7 V3-ga ja CDA-ga</a>
+      </li>
+      <li>
+        <a href="checklist.html">Eeldused liidestujale</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefaktid</a>
+  </li>
+  <li>
+    <a href="toc.html">Sisukord</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Muu
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="contact.html">Kontaktid</a>
+      </li>
+      <li>
+        <a href="download.html">Allalaadimised</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R5/index.html">FHIR Spec </a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Checklist</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Patsientide üldandmete teenus / Master Patient Index - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.ee/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Checklist</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h2 id="checklist-mpi-ga-liidestuva-tarkvara-jaoks">Checklist MPI-ga liidestuva tarkvara jaoks</h2>
+
+<ul>
+  <li>Tehnilised nõuded
+    <ul>
+      <li><input type="checkbox" /> Vajalikud ligipääsud on X-teel MPI teenustele <a href="dev.html#ligipääsud">tellitud</a></li>
+      <li><input type="checkbox" /> Oskab teha <a href="https://blog.ria.ee/x-road-rest-tugi">REST päringuid üle X-tee</a>.</li>
+      <li><input type="checkbox" /> Oskab küsida autoriseerimist tõendavat <a href="dev.html#autoriseerimine">juurdepääsutõendit</a></li>
+      <li><input type="checkbox" /> Omab <a href="http://fhir.hl7.org">FHIR tuge</a>. Oskab kasutada <a href="http://hl7.org/fhir/documentation.html">RESTful API-t</a>.
+        <ul>
+          <li><input type="checkbox" /> Oskab kuvada kasutajale <a href="errors.html">vead</a>, mida tagastab MPI <a href="http://hl7.org/fhir/operationoutcome.html">OperationOutcome</a> elemendist.</li>
+          <li><input type="checkbox" /> Oskab koostada <a href="http://hl7.org/fhir/search.html">Search</a> päringut, millele tagastakse kogum ressurssidest <a href="http://hl7.org/fhir/bundle.html">Bundle</a>.</li>
+          <li><input type="checkbox" /> Oskab koostada komplekssõnumit, mis koosneb mitmest ressursist <a href="http://hl7.org/fhir/bundle.html">Bundle</a>.</li>
+        </ul>
+      </li>
+      <li><input type="checkbox" /> Oskab määrata <a href="http://hl7.org/fhir/profiling.html">profiili</a> iga muudetava ressurssi kohta  POST ja PUT tegevuste puhul.</li>
+      <li><input type="checkbox" /> Oskab kasutada <a href="http://hl7.org/fhir/operations.html">operatsioone</a>.</li>
+    </ul>
+  </li>
+  <li><input type="checkbox" /> Oskab kasutada <a href="https://build.fhir.org/ig/TEHIK-EE/TerminologyServices">FHIR terminoloogiat</a>.
+    <ul>
+      <li><input type="checkbox" /> Toetab kõiki <a href="checks.html#kasutatav-terminoloogia">PÜTis kasutatud klassifikaatoreid ja loendeid</a>.</li>
+      <li><input type="checkbox" /> Oskab koverteerida OID&lt;-&gt;URL identifikaatorite süsteemid, vastabvalt ConceptMap-ile <a href="ConceptMap-identity-system-to-oid.html">identity-system-to-oid</a></li>
+    </ul>
+  </li>
+  <li><a href="dev.html#andmete-pärimine">Oskab</a> opereerida <a href="http://hl7.org/fhir/patient.html">Patient</a> ressursiga
+    <ul>
+      <li><input type="checkbox" /> Get Patient.id järgi  <code class="language-plaintext highlighter-rouge">GET /Patient/{id}</code></li>
+      <li><input type="checkbox" /> Kindla patsiendi andmete muutmine  <code class="language-plaintext highlighter-rouge">PUT /Patient/{id}</code></li>
+      <li><input type="checkbox" /> Uue patsiendi lisamine  <code class="language-plaintext highlighter-rouge">POST /Patient</code></li>
+      <li><input type="checkbox" /> Oskab otsida patsiendi identifikaatori alusel  <code class="language-plaintext highlighter-rouge">GET /Patient?identifier=..</code></li>
+      <li><input type="checkbox" /> Toetab <a href="https://geoportaal.maaamet.ee/est/Teenused/Integreeritav-aadressiotsing-In-ADS-p504.html">ADS</a>-i. Oskab vastu võtta ja saata aadressi ADS kujul.</li>
+      <li><input type="checkbox" /> Arvestab RR-i elukoha ja lisa-aadresside esitamise <a href="https://geoportaal.maaamet.ee/docs/aadress/RR_elukohtade-ja-lisaaadresside-valiku-juhend.pdf">reegleid</a></li>
+      <li><input type="checkbox" /> Suudab kuvada TTO kasutajale informatsiooni <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/StructureDefinition-ee-address.html">põhi- ja lisaaadressite</a> kohta.</li>
+      <li><input type="checkbox" /> Arvestab <a href="checks.html#püt-rakenduse-sisesed-kontrollid">PÜT sisemiste kontrollidega</a>,  s.h. toetab ametlikku telefoninumbri, emaili ja aadressi kuju</li>
+    </ul>
+  </li>
+  <li>Arvestab erinevate <a href="patient.html">patsiendi liikidega</a>
+    <ul>
+      <li><input type="checkbox" /> Toetab <a href="StructureDefinition-ee-mpi-patient-verified.html">tuvastatud patsiendi</a> andmekoosseisu.</li>
+      <li><input type="checkbox" /> Toetab <a href="StructureDefinition-ee-mpi-patient-unknown.html">tundmatu, anonüümse patsiendi</a> või mitte-elusa patsiendi (nt õhk, keskkonnaproovid, ..) andmekoosseisu (kui TTO-l on vastav raviprofiil)</li>
+      <li>Arvestab, et tulevikus tuleb toetada
+        <ul>
+          <li><input type="checkbox" /> <a href="StructureDefinition-ee-mpi-patient-newborn.html">vastsündinud patsiendi</a> andmekoosseisu (kui TTO-l on vastav raviprofiil)</li>
+          <li><input type="checkbox" /> <a href="StructureDefinition-ee-mpi-patient-stillborn.html">surnultsündinud patsiendi</a> andmekoosseisu (kui TTO-l on vastav raviprofiil)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Oskab opereerida <a href="http://hl7.org/fhir/relatedperson.html">RelatedPerson</a> ressursiga
+    <ul>
+      <li><input type="checkbox" /> Toetab <a href="StructureDefinition-ee-mpi-related-person.html">seotud isiku</a> andmekoosseisu <code class="language-plaintext highlighter-rouge">GET/PUT/POST/DELETE /RelatedPerson</code></li>
+      <li><input type="checkbox" /> Toetab seotud isikute otsingut <code class="language-plaintext highlighter-rouge">GET /RelatedPerson?patient=value</code></li>
+      <li><input type="checkbox" /> Toetab mitut seosetüüpi mitmest kodeerimissüsteemist - <a href="ValueSet-person-relationship-class.html">kontaktisiku tüüp</a> ja <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/ValueSet-person-relationship.html">suhe patsiendiga</a>.</li>
+    </ul>
+  </li>
+  <li>Oskab kasutada <a href="operations.html">MPI operatsioone</a>, s.h.
+    <ul>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-incapacity-for-work.html">töövõimetuse päringut</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-disability.html">puude päringut</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-education.html">hariduse päringut</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-occupation.html">töökoha päringut</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-legal-guardian.html">hooldusõiguste päringut</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-power-of-attorney.html">eestkoste päringut</a></li>
+      <li><input type="checkbox" /> <a href="link.html">patsientide loogilist sidumist ja lahtisidumist</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-generate-mrn.html">MPI identifikaatori loomist</a></li>
+      <li><input type="checkbox" /> <a href="OperationDefinition-patient-foreign.html">välismaalase otsingut</a></li>
+    </ul>
+  </li>
+  <li>Protsess
+    <ul>
+      <li><input type="checkbox" /> PÜT on integreeritud TTO kõikidesse patsiendi andmeid käsitlevate rakenduste põhivoogudesse.</li>
+      <li><input type="checkbox" /> TTO tarkvara suudab töötada ka hetkedel, kui PÜT pole ligipääsetav.</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://tehik.ee">TEHIK</a>.  Package hl7.fhir.ee.mpi#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 20, 2024 13:23+0000">2024-06-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

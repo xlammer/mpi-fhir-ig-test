@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "legal-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.ee/CodeSystem/legal-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Estonian (et)</b></td></tr><tr><td style=\"white-space:nowrap\">T0<a name=\"legal-status-T0\"> </a></td><td>Teovõimeline</td><td/></tr><tr><td style=\"white-space:nowrap\">T1<a name=\"legal-status-T1\"> </a></td><td>Piiratud teovõimega valimisõiguseta</td><td>Piiratud valimisõiguseta</td></tr><tr><td style=\"white-space:nowrap\">T3<a name=\"legal-status-T3\"> </a></td><td>Piiratud teovõimega valimisõigusega</td><td>Piiratud valimisõigusega</td></tr></table></div>"
+  },
+  "url" : "https://fhir.ee/CodeSystem/legal-status",
+  "version" : "1.0.0",
+  "name" : "EEMPILegalStatus",
+  "title" : "Legal Status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-06-20T13:23:32+00:00",
+  "publisher" : "TEHIK",
+  "contact" : [{
+    "name" : "TEHIK",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://tehik.ee"
+    }]
+  }],
+  "description" : "The legal status that applies to the patient. The legal status indicates the basis on which the patient is staying in a healthcare organization. This can be either voluntary or involuntary, however the legal status is always determined by a judge. A patient can also receive healthcare based on a forensic status.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "EE",
+      "display" : "Estonia"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "T0",
+    "display" : "Teovõimeline"
+  },
+  {
+    "code" : "T1",
+    "display" : "Piiratud teovõimega valimisõiguseta",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Piiratud valimisõiguseta"
+    }]
+  },
+  {
+    "code" : "T3",
+    "display" : "Piiratud teovõimega valimisõigusega",
+    "designation" : [{
+      "language" : "et",
+      "value" : "Piiratud valimisõigusega"
+    }]
+  }]
+}
